@@ -1,0 +1,16 @@
+:root {
+    --dark-pink: rgb(186, 66, 112);
+    --link-water-white: rgb(251, 252, 254);
+    --san-juan-blue: rgb(54, 86, 107);
+    --mirage-blue: rgb(27, 38, 47);
+    --charm-pink: rgb(218, 109, 151);
+    --light-san-juan-blue: rgb(108, 130, 148);
+}
+
+@media screen and (min-width: 1420px) {
+    .main-content__div {
+        width: 95%;
+        max-width: 1490px;
+        margin: 0 auto;
+    }
+}
