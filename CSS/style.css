@@ -7,10 +7,32 @@
     --light-san-juan-blue: rgb(108, 130, 148);
 }
 
-@media screen and (min-width: 1420px) {
+.button-text{
+    font-family: Public Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.115px;
+    color: var(--link-water-white);
+}
+
+.button--primary-pink{
+    background-color: var(--dark-pink);
+    border: none;
+    border-radius: 24px;
+    width: 173px;
+    height: 48px;
+}
+
+.button--primary-pink:hover, .button--primary-pink:active{
+    cursor: pointer;
+    background-color: var(--charm-pink);
+}
+
+@media screen and (min-width: 1440px) {
     .main-content__div {
-        width: 95%;
-        max-width: 1490px;
+        max-width: 1440px;
         margin: 0 auto;
     }
 }
