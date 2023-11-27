@@ -1,0 +1,57 @@
+#who-we {
+    width: 1fr;
+    height: 472px;
+    flex-shrink: 0;
+    background-color: #1B262F;
+    
+}
+
+.title {
+    color: #FBFCFE;
+
+font-family: DM Serif Display;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 56px;
+letter-spacing: -0.369px;
+flex-shrink: 0;
+width: 445px;
+height: 56px;
+padding: 100px 830px 24px 165px;
+}
+
+.text {
+    color: #FBFCFE;
+
+font-family: Public Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+width: 445px;
+height: 112px;
+padding-left: 165px;
+}
+
+#who-we-knopke {
+    color: #FBFCFE;
+
+    text-align: center;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.115px;
+    background-color: transparent;
+    border: 1px solid #FBFCFE;
+    margin-left: 165px;
+    margin-bottom: 100px;
+    margin-top: 32px;
+}
+
+#text-icons {
+display: grid;
+
+}
