@@ -1,49 +1,70 @@
 :root {
     --dark-pink: rgb(186, 66, 112);
     --link-water-white: rgb(251, 252, 254);
-    --san-juan-blue: rgb(54, 86, 107);
+    --san-juan-blue: rgb(54, 83, 107);
     --mirage-blue: rgb(27, 38, 47);
     --charm-pink: rgb(218, 109, 151);
     --light-san-juan-blue: rgb(108, 130, 148);
 }
 
-.button-text{
+.main-content__div {
+    background-color: #EDF3F8;
+    padding: 40px 165px 0 165px;
+}
+
+.button-text {
     font-family: Public Sans;
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.115px;
+    border-radius: 24px;
+}
+
+.button--primary-pink {
+    background-color: var(--dark-pink);
+    border: none;
+    width: 173px;
+    height: 48px;
     color: var(--link-water-white);
 }
 
-.button--primary-pink{
-    background-color: var(--dark-pink);
-    border: none;
-    border-radius: 24px;
-    width: 173px;
+.button--primary-blue {
+    background-color: transparent;
+    border: 1px solid var(--san-juan-blue);
+    width: 168px;
     height: 48px;
+    color: var(--san-juan-blue);
+    font-family: Public Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.115px;
 }
 
-.button--primary-pink:hover, .button--primary-pink:active{
+.button--primary-pink:hover,
+.button--primary-pink:active {
     cursor: pointer;
     background-color: var(--charm-pink);
 }
 
-@media screen and (min-width: 1440px) {
-    .main-content__div {
-        max-width: 1440px;
-        margin: 0 auto;
-    }
+.button--primary-blue:hover,
+.button--primary-blue:active {
+    cursor: pointer;
+    background-color: var(--san-juan-blue);
+    color: var(--link-water-white);
 }
 
 footer{
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100px;
     background: #1B262F;
+    overflow: hidden;
 }
 
 .footer{
@@ -103,8 +124,27 @@ footer{
     height: 780px;
     border-radius: 780px;
     background: #36536B;
-    position: fixed;
-    right: -451px;
-    bottom: -546px;
+    position: relative;
     z-index: 3;
+    right: -895px;
+    bottom: 150px;
+}
+
+@media screen and (min-width: 1440px) {
+    .main-content__div {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 376px){
+    .main-content__div {
+        padding: 45px 40px 0 39px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .main-content__div {
+        padding: 40px 24px 0 24px;
+    }
 }
