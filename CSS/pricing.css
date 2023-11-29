@@ -50,7 +50,6 @@
     font-weight: 400;
     line-height: 72px;
     letter-spacing: -0.431px;
-    margin-bottom: 24px;
 }
 
 .pricing-main {
@@ -62,6 +61,7 @@
 .list-main {
     border-top: 1px solid rgba(54, 83, 107, 0.25);
     border-bottom: 1px solid rgba(54, 83, 107, 0.25);
+    margin-top: 24px;
 }
 
 .list-section {
@@ -82,7 +82,7 @@
 }
 
 .list-section__row:last-child {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .empty-checkbox {
@@ -136,7 +136,6 @@
     .pricing-plan__price {
         font-size: 48px;
         letter-spacing: -0.369px;
-        margin-bottom: 21px;
     }
 
     .pricing-main {
@@ -146,6 +145,7 @@
     .list-main {
         display: flex;
         justify-content: center;
+        margin-top: 21px;
     }
 }
 
@@ -184,7 +184,6 @@
     .pricing-plan__price {
         font-size: 48px;
         letter-spacing: -0.369px;
-        margin-bottom: 21px;
     }
 
     .pricing-main {
@@ -193,7 +192,8 @@
 
     .list-main {
         display: flex;
-        justify-content: center;
+        justify-content: center;  
+        margin-top: 21px;
     }
 
     .pricing-main .button--primary-blue {
