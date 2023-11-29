@@ -1,60 +1,168 @@
 :root {
-    --dark-pink: rgb(186, 66, 112);
-    --link-water-white: rgb(251, 252, 254);
-    --san-juan-blue: rgb(54, 83, 107);
-    --mirage-blue: rgb(27, 38, 47);
-    --charm-pink: rgb(218, 109, 151);
-    --light-san-juan-blue: rgb(108, 130, 148);
+  --dark-pink: rgb(186, 66, 112);
+  --link-water-white: rgb(251, 252, 254);
+  --san-juan-blue: rgb(54, 83, 107);
+  --mirage-blue: rgb(27, 38, 47);
+  --charm-pink: rgb(218, 109, 151);
+  --light-san-juan-blue: rgb(108, 130, 148);
 }
 
 .main-content__div {
-    background-color: #EDF3F8;
-    padding: 40px 165px 0 165px;
+  background-color: #EDF3F8;
+  padding: 40px 165px 0 165px;
 }
 
 .button-text {
-    font-family: Public Sans;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.115px;
-    border-radius: 24px;
+  font-family: Public Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.115px;
+  border-radius: 24px;
 }
 
 .button--primary-pink {
-    background-color: var(--dark-pink);
-    border: none;
-    width: 173px;
-    height: 48px;
-    color: var(--link-water-white);
+  background-color: var(--dark-pink);
+  border: none;
+  width: 173px;
+  height: 48px;
+  color: var(--link-water-white);
 }
 
 .button--primary-blue {
-    background-color: transparent;
-    border: 1px solid var(--san-juan-blue);
-    width: 168px;
-    height: 48px;
-    color: var(--san-juan-blue);
-    font-family: Public Sans;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.115px;
+  background-color: transparent;
+  border: 1px solid var(--san-juan-blue);
+  width: 168px;
+  height: 48px;
+  color: var(--san-juan-blue);
+  font-family: Public Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.115px;
 }
 
 .button--primary-pink:hover,
 .button--primary-pink:active {
-    cursor: pointer;
-    background-color: var(--charm-pink);
+  cursor: pointer;
+  background-color: var(--charm-pink);
 }
 
 .button--primary-blue:hover,
 .button--primary-blue:active {
-    cursor: pointer;
-    background-color: var(--san-juan-blue);
-    color: var(--link-water-white);
+  cursor: pointer;
+  background-color: var(--san-juan-blue);
+  color: var(--link-water-white);
+}
+
+.button-navbar {
+  z-index: 3;
+}
+
+.container-navbar {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-left a {
+  color: rgb(56, 85, 110);
+  font-family: Public Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.navbar-left li {
+  padding-left: 40px;
+  opacity: 0.7;
+}
+
+.navbar-left li:hover {
+  opacity: 1;
+}
+
+.navbar-left li:first-child {
+  padding: 0;
+  opacity: unset;
+}
+
+.navbar-left a:hover {
+  color: #36536b;
+  opacity: 1;
+}
+
+.navbar-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.circle {
+  position: absolute;
+  top: -172px;
+  right: -140px;
+}
+
+.container-bottom {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  padding: 96px 0;
+}
+
+.item-bottom-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.item-bottom-right input {
+  padding: 0;
+  background: #fbfcfe;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border: none;
+  border-radius: 24px;
+  width: 418px;
+  height: 48px;
+  position: relative;
+  left: 173px;
+  padding-left: 27px;
+}
+
+.item-bottom-right input::placeholder {
+  font-family: Public Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #36536b;
+  opacity: 0.5;
+  padding: 16px 276px 14px 0px;
+}
+
+.button-bottom {
+  z-index: 2;
+}
+
+.container-bottom h2 {
+  color: #36536b;
+  font-family: DM Serif Display;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -0.369px;
 }
 
 footer {
