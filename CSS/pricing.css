@@ -4,6 +4,12 @@
     --san-juan-blue: rgb(54, 83, 107);
 }
 
+.circle-pricing {
+    position: absolute;
+    top: -527px;
+    right: -140px
+}
+
 .pricing-heading {
     color: var(--san-juan-blue);
     font-family: DM Serif Display;
@@ -51,7 +57,6 @@
     display: grid;
     grid-template-columns: repeat(3, 350px);
     grid-column-gap: 30px;
-    padding-bottom: 96px;
 }
 
 .list-main {
