@@ -2,15 +2,27 @@
     --dark-pink: rgb(186, 66, 112);
     --mirage-blue: rgb(27, 38, 47);
     --san-juan-blue: rgb(54, 83, 107);
-}
-
-.circle-pricing {
-    position: absolute;
-    top: -527px;
-    right: -140px
-}
-
-.pricing-heading {
+  }
+  
+  .header-circle {
+    width: 780px;
+    height: 780px;
+    border-radius: 780px;
+    background: #36536b;
+    position: relative;
+    z-index: 3;
+    float: right;
+    opacity: 0.2;
+    top: -212px;
+    right: -305px;
+  }
+  
+  .header-circle-pricing {
+    top: -615px;
+    right: -305px;
+  }
+  
+  .pricing-heading {
     color: var(--san-juan-blue);
     font-family: DM Serif Display;
     font-size: 56px;
@@ -19,9 +31,9 @@
     line-height: 56px;
     letter-spacing: -0.431px;
     margin: 82px 0 72px 0;
-}
-
-.pricing-main__headings {
+  }
+  
+  .pricing-main__headings {
     color: var(--dark-pink);
     font-family: DM Serif Display;
     font-size: 32px;
@@ -30,9 +42,9 @@
     line-height: 40px;
     letter-spacing: -0.246px;
     margin-bottom: 16px;
-}
-
-.pricing-plan__description {
+  }
+  
+  .pricing-plan__description {
     color: var(--san-juan-blue);
     font-family: Public Sans;
     font-size: 15px;
@@ -40,163 +52,174 @@
     font-weight: 400;
     line-height: 28px;
     margin-bottom: 8px;
-}
-
-.pricing-plan__price {
-    color: var(--san-juan-blue);
-    font-family: DM Serif Display;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 72px;
-    letter-spacing: -0.431px;
-}
-
-.pricing-main {
+  }
+  
+  .pricing-plan__price {
+      color: var(--san-juan-blue);
+      font-family: DM Serif Display;
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 72px;
+      letter-spacing: -0.431px;
+  }
+  
+  .pricing-main {
     display: grid;
     grid-template-columns: repeat(3, 350px);
     grid-column-gap: 30px;
-}
-
-.list-main {
-    border-top: 1px solid rgba(54, 83, 107, 0.25);
-    border-bottom: 1px solid rgba(54, 83, 107, 0.25);
-    margin-top: 24px;
-}
-
-.list-section {
+  }
+  
+  .list-main {
+      border-top: 1px solid rgba(54, 83, 107, 0.25);
+      border-bottom: 1px solid rgba(54, 83, 107, 0.25);
+      margin-top: 21px;
+  }
+  
+  .list-section {
     display: flex;
     flex-direction: column;
-}
-
-.list-section__row {
+  }
+  
+  .list-section__row {
     display: inline-flex;
     padding-right: 0px;
     align-items: center;
     gap: 24px;
     padding-bottom: 8px;
-}
-
-.list-section__row:first-child {
+  }
+  
+  .list-section__row:first-child {
     margin-top: 24px;
-}
-
-.list-section__row:last-child {
-    margin-bottom: 16px;
-}
-
-.empty-checkbox {
+  }
+  
+  .list-section__row:last-child {
+      margin-bottom: 16px;
+  }
+  
+  .empty-checkbox {
     padding-left: 36px;
     opacity: 0.5;
-}
-
-.list-section__row span {
+  }
+  
+  .list-section__row span {
     color: var(--san-juan-blue);
     font-family: Public Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-}
-
-.pricing-main .button--primary-blue {
+  }
+  
+  .pricing-main .button--primary-blue {
     margin-top: 24px;
-}
-
-.list-section__row img {
+  }
+  
+  .list-section__row img {
     width: 12px;
     height: 8px;
-}
-
-@media screen and (max-width: 768px) and (min-width: 376px){
+  }
+  
+  
+  @media screen and (max-width: 768px) and (min-width: 376px) {
+    .header-circle-pricing {
+        top: -552px;
+        right: -557px;
+    }
+  
     .pricing-main__container {
-        text-align: center;
+      text-align: center;
+      z-index: 300;
+      position: relative;
     }
-
+  
     .pricing-main {
-        grid-template-columns: repeat(3, 223px);
+      grid-template-columns: repeat(3, 223px);
     }
-
+  
     .pricing-heading {
-        font-size: 48px;
-        letter-spacing: -0.369px;
-        margin: 80px 0 69px 0;
+      font-size: 48px;
+      letter-spacing: -0.369px;
+      margin: 80px 0 69px 0;
+      height: 50px;
+      position: relative;
+      top: -705px;
     }
-
+  
     .pricing-main__headings {
-        font-size: 24px;
-        letter-spacing: -0.185px;
-        margin-bottom: 13px;
+      font-size: 24px;
+      letter-spacing: -0.185px;
+      margin-bottom: 13px;
     }
-
+  
     .pricing-plan__description {
-        margin-bottom: 19px;
+      margin-bottom: 19px;
     }
-
+  
     .pricing-plan__price {
-        font-size: 48px;
-        letter-spacing: -0.369px;
+      font-size: 48px;
+      letter-spacing: -0.369px;
+      margin-bottom: 21px;
     }
-
+  
     .pricing-main {
-        grid-column-gap: 10px;
+      grid-column-gap: 10px;
     }
-
+  
     .list-main {
-        display: flex;
-        justify-content: center;
-        margin-top: 21px;
+      display: flex;
+      justify-content: center;
     }
-}
-
-@media screen and (max-width: 376px) {
-
+  }
+  
+  @media screen and (max-width: 376px) {
     .pricing-main__container {
-        text-align: center;
+      text-align: center;
     }
-
+  
     .pricing-main {
-        display: block;
+      display: block;
     }
-
-    .pricing-main>section {
-        width: 327px;
+  
+    .pricing-main > section {
+      width: 327px;
     }
-
+  
     .pricing-heading {
-        font-size: 32px;
-        line-height: 36px;
-        letter-spacing: -0.246px;
-        margin: 48px 0;
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: -0.246px;
+      margin: 48px 0;
     }
-
+  
     .pricing-main__headings {
-        font-size: 24px;
-        line-height: 32px;
-        letter-spacing: -0.185px;
-        margin-bottom: 17px;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.185px;
+      margin-bottom: 17px;
     }
-
+  
     .pricing-plan__description {
-        margin-bottom: 19px;
+      margin-bottom: 19px;
     }
-
+  
     .pricing-plan__price {
-        font-size: 48px;
-        letter-spacing: -0.369px;
+      font-size: 48px;
+      letter-spacing: -0.369px;
     }
-
+  
     .pricing-main {
-        grid-column-gap: 10px;
+      grid-column-gap: 10px;
     }
-
+    
     .list-main {
-        display: flex;
-        justify-content: center;  
-        margin-top: 21px;
+      display: flex;
+      justify-content: center;
+      margin-top: 21px;
     }
-
-    .pricing-main .button--primary-blue {
-        margin-bottom: 48px;
-    }
-}
+    
+        .pricing-main .button--primary-blue {
+          margin-bottom: 48px;
+      }
+  }
+  
