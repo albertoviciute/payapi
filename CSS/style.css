@@ -240,7 +240,7 @@ footer {
     right: -390px;
     bottom: 236px;
     float: right;
-    opacity: 0.2;
+    opacity: 0.15;
 }
 
 .footer--right span{
@@ -250,6 +250,10 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.footer--right span.footer-twitter__link {
+  background-size: unset;
 }
 
 .footer-facebook__link{
