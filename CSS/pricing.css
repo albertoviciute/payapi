@@ -3,23 +3,14 @@
     --mirage-blue: rgb(27, 38, 47);
     --san-juan-blue: rgb(54, 83, 107);
   }
-  
-  .header-circle {
-    width: 780px;
-    height: 780px;
-    border-radius: 780px;
-    background: #36536b;
-    position: relative;
-    z-index: 3;
-    float: right;
-    opacity: 0.2;
-    top: -212px;
-    right: -305px;
-  }
-  
-  .header-circle-pricing {
-    top: -615px;
-    right: -305px;
+
+  .main-content__div {
+    background-color: #edf3f8;
+    background-image: url(../IMG/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 800px -527px;
+    padding: 40px 165px 0 165px;
+    overflow: hidden;
   }
   
   .pricing-heading {
@@ -122,15 +113,9 @@
   
   
   @media screen and (max-width: 768px) and (min-width: 376px) {
-    .header-circle-pricing {
-        top: -552px;
-        right: -557px;
-    }
   
     .pricing-main__container {
       text-align: center;
-      z-index: 300;
-      position: relative;
     }
   
     .pricing-main {
@@ -141,9 +126,6 @@
       font-size: 48px;
       letter-spacing: -0.369px;
       margin: 80px 0 69px 0;
-      height: 50px;
-      position: relative;
-      top: -705px;
     }
   
     .pricing-main__headings {

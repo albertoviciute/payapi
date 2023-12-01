@@ -9,8 +9,15 @@
 
 .main-content__div {
   background-color: #edf3f8;
+  background-image: url(../IMG/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: 800px -172px;
   padding: 40px 165px 0 165px;
   overflow: hidden;
+}
+
+.menu-mobile {
+  display: none;
 }
 
 .button-text {
@@ -113,19 +120,6 @@
   display: flex;
   flex: 1;
   justify-content: flex-end;
-}
-
-.header-circle {
-  width: 780px;
-  height: 780px;
-  border-radius: 780px;
-  background: #36536b;
-  position: relative;
-  z-index: 3;
-  float: right;
-  opacity: 0.2;
-  top: -212px;
-  right: -305px;
 }
 
 .container-bottom {
@@ -305,19 +299,18 @@ footer {
 @media screen and (max-width: 768px) and (min-width: 376px) {
    .main-content__div {
        padding: 45px 40px 0 39px;
+       background-position: -91px -663px;
+       background-size: 949px;
    }
+
+   .menu-mobile {
+    display: none;
+  }
 
    .footer{
        padding: 0 40px 0 39px;
    }
-   .header-circle {
-     top: -750px;
-     right: -130px;
- }
- .header-circle img {
-     width: 949px;
-     height: 949px;
- }
+   
  .navbar-left img {
      width: 135px;
      height: 38px;
@@ -325,17 +318,81 @@ footer {
  .navbar-left li:nth-child(2) {
      padding-left: 64px;
  }
- .header-circle {
-     width: 949px;
-     height: 949px;
-     border-radius: 949px;
+ .container-bottom {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
  }
+
+ .container-bottom h2 {
+  margin-bottom: 40px;
+}
+
+ .item-bottom-right input {
+  left: 87.5px;
+ }
+
+ .button-bottom {
+  position: relative;
+  right: 85px;
+ }
+
 }
 
 @media screen and (max-width: 376px) {
    .main-content__div {
        padding: 40px 24px 0 24px;
+       background-position: -202px -550px;
    }
+
+   .navbar-left li:nth-child(2) {
+    display: none;
+  }
+ 
+  .navbar-left li:nth-child(3) {
+    display: none;
+  }
+
+  .navbar-left li:nth-child(4) {
+    display: none;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: flex;
+    padding-left: 164px;
+  }
+
+  .container-bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-bottom h2 {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.246px;
+    margin-bottom: 40px;
+  }
+
+  .item-bottom-right {
+    flex-direction: column;
+  }
+
+  .item-bottom-right input {
+    margin-bottom: 16px;
+    width: 300px;
+    left: 0px;
+  }
+
+  .button-bottom {
+    width: 327px;
+    margin-bottom: 80px;
+  }
 
    footer{
        height: 353px;
