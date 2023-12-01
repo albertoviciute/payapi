@@ -1,0 +1,261 @@
+.who-we-work {
+    background: #1B262F;
+    display: grid;
+    grid-template-columns: 576px 575px;
+    grid-template-rows: auto auto;
+    min-width: 1440px;
+    position: relative;
+    left: -165px;
+    padding: 100px 163px 100px 165px;
+    overflow: hidden;
+    height: 272px;
+}
+
+.who-we-work__heading {
+    color: #FBFCFE;
+    font-family: DM Serif Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.369px;
+    white-space: nowrap;
+    margin-bottom: 24px;
+    grid-column: 1/3;
+    z-index: 10;
+}
+
+.who-we-work__info {
+    width: 445px;
+    margin-right: 131px;
+    z-index: 10;
+}
+
+.who-we-work__info p {
+    color: #FBFCFE;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 32px;
+    opacity: 0.7;
+}
+
+.who-we-work__info .button--primary-blue {
+    border: 1px solid #FBFCFE;
+    color: #FBFCFE;
+    width: 129px;
+}
+
+.who-we-work__info .button--primary-blue:hover,
+.who-we-work__info .button--primary-blue:active {
+    border: 1px solid #FBFCFE;
+    background: #FFF;
+    color: #1B262F;
+}
+
+.enterprise-logo__div span {
+    display: block;
+    z-index: 10;
+}
+
+.span-tesla {
+    background-image: url(/IMG/ENTERPRISES-LOGO/tesla.svg);
+    width: 129px;
+    height: 17px;
+}
+
+.span-microsoft {
+    background-image: url(/IMG/ENTERPRISES-LOGO/microsoft.svg);
+    width: 145px;
+    height: 31px;
+    margin-top: -7px;
+}
+
+.span-hewlett {
+    background-image: url(/IMG/ENTERPRISES-LOGO/hewlett-packard.svg);
+    width: 140px;
+    height: 27px;
+    margin-top: -5px;
+    margin-left: 12px;
+}
+
+.span-oracle {
+    background-image: url(/IMG/ENTERPRISES-LOGO/oracle.svg);
+    width: 131px;
+    height: 17px;
+}
+
+.span-google {
+    background-image: url(/IMG/ENTERPRISES-LOGO/google.svg);
+    width: 96px;
+    height: 33px;
+    margin-top: -10px;
+    margin-left: 25px;
+}
+
+.span-nvidia {
+    background-image: url(/IMG/ENTERPRISES-LOGO/nvidia.svg);
+    width: 137px;
+    height: 26px;
+    margin-top: -5px;
+    margin-left: 15px;
+}
+
+.enterprise-logo__div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 72px 50px;
+    margin-top: 11px;
+}
+
+.who-we-bubble {
+    width: 780px;
+    height: 780px;
+    border-radius: 780px;
+    background: #36536B;
+    position: relative;
+    z-index: 3;
+    left: -400px;
+    top: -730px;
+    opacity: 0.15;
+}
+
+@media screen and (max-width: 768px) {
+    .main-content__div {
+        text-align: center;
+    }
+
+    .enterprise-logo__div {
+        grid-row: 1/2;
+        margin-top: 6px;
+        margin-bottom: 38px;
+        grid-template-columns: repeat(3, 176px);
+        margin-left: 9px;
+    }
+
+    .who-we-work {
+        padding: 90px 116px 88px 107px;
+        grid-template-columns: 554px;
+        min-width: 768px;
+        left: -39px;  
+        height: 615px;
+    }
+
+    .who-we-work__info {
+        margin-right: unset;
+        margin: 0 auto;
+    }
+
+    .who-we-work__heading {
+        grid-column: 1/2;
+    }
+
+    .who-we-work__info {
+        grid-row: 3/4;
+    }
+
+    .span-microsoft {
+        margin-left: 15px;
+    }
+
+    .span-hewlett {
+        margin-left: 44px;
+    }
+
+    .span-google {
+        margin-top: -9px;
+        margin-left: 40px;
+    }
+
+    .span-nvidia {
+        margin-left: 47px;
+    }
+    .who-we-bubble {
+        left: -115px;
+        top: -1075px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .who-we-work {
+        padding: 80px 24px 80px 24px;
+        grid-template-columns: 327px;
+        left: -25px;
+        height: 509px;
+    }
+
+    .who-we-work__info {
+        width: 327px;
+    }
+
+    .who-we-work__heading {
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: -0.246px;
+        margin-bottom: 16px;
+    }
+
+    .who-we-work__info p {
+        width: 330px;
+        margin-bottom: 60px;
+    }
+
+    .enterprise-logo__div {
+        margin-top: 4px;
+        margin-bottom: 56px;
+        grid-template-columns: repeat(2, 150px);
+        margin-left: 27px;
+    }
+
+    .span-tesla {
+        background-image: url(/IMG/ENTERPRISES-LOGO/MOBILE/tesla-mobile.svg);
+        width: 107px;
+        height: 15px;
+
+    }
+
+    .span-microsoft {
+        background-image: url(/IMG/ENTERPRISES-LOGO/MOBILE/microsoft-mobile.svg);
+        width: 120px;
+        height: 26px;
+        margin-left: 6px;
+        margin-top: -5px;
+    }
+
+    .span-hewlett {
+        background-image: url(/IMG/ENTERPRISES-LOGO/MOBILE/hewlett-packard-mobile.svg);
+        width: 115px;
+        height: 22px;
+        margin-top: -11px;
+        margin-left: -1px;
+    }
+
+    .span-oracle {
+        background-image: url(/IMG/ENTERPRISES-LOGO/MOBILE/oracle-mobile.svg);
+        width: 108px;
+        height: 14px;
+        margin: -8px 0 0 19px;
+    }
+
+    .span-google {
+        background-image: url(/IMG/ENTERPRISES-LOGO/MOBILE/google-mobile.svg);
+        width: 79px;
+        height: 27px;
+        margin: 1px 0 0 7px;
+    }
+
+    .span-nvidia {
+        background-image: url(/IMG/ENTERPRISES-LOGO/MOBILE/nvidia-mobile.svg);
+        width: 113px;
+        height: 22px;
+        margin: 4px 0 0 6px;
+    }
+
+    .who-we-bubble {
+        left: -225px;
+        top: -1193px;
+    }
+
+}
