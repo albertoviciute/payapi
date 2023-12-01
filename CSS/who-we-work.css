@@ -1,0 +1,153 @@
+.who-we-work {
+    background: #1B262F;
+    display: grid;
+    grid-template-columns: 576px 575px;
+    grid-template-rows: auto auto;
+    min-width: 1440px;
+    position: relative;
+    left: -165px;
+    padding: 100px 163px 100px 165px;
+}
+
+.who-we-work__heading {
+    color: #FBFCFE;
+    font-family: DM Serif Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.369px;
+    white-space: nowrap;
+    margin-bottom: 24px;
+    grid-column: 1/3;
+}
+
+.who-we-work__info {
+    width: 445px;
+    margin-right: 131px;
+}
+
+.who-we-work__info p {
+    color: #FBFCFE;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 32px;
+    opacity: 0.7;
+}
+
+.who-we-work__info .button--primary-blue {
+    border: 1px solid #FBFCFE;
+    color: #FBFCFE;
+    width: 129px;
+}
+
+.enterprise-logo__div span {
+    display: block;
+    width: 145px;
+}
+
+.enterprise-logo__div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 72px 50px;
+    margin-top: 11px;
+}
+
+.enterprise-logo__div span:nth-child(2) {
+    margin-top: -7px;
+}
+
+.enterprise-logo__div span:nth-child(3) {
+    margin-top: -5px;
+    margin-left: 12px;
+}
+
+.enterprise-logo__div span:nth-child(5) {
+    margin-top: -10px;
+    margin-left: 25px;
+}
+
+.enterprise-logo__div span:last-child {
+    margin-top: -5px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-content__div {
+        text-align: center;
+    }
+
+    .enterprise-logo__div {
+        grid-row: 1/2;
+        margin-top: 6px;
+        margin-bottom: 38px;
+    }
+
+    .who-we-work {
+        padding: 90px 116px 88px 107px;
+        grid-template-columns: 554px;
+        min-width: 768px;
+        left: -39px;
+    }
+
+    .who-we-work__info {
+        margin-right: unset;
+        margin: 0 auto;
+    }
+
+    .who-we-work__heading {
+        grid-column: 1/2;
+    }
+
+    .who-we-work__info {
+        grid-row: 3/4;
+    }
+
+    .enterprise-logo__div span:nth-child(2) {
+        margin-left: 15px;
+    }
+
+    .enterprise-logo__div span:nth-child(3) {
+        margin-left: 33px;
+    }
+
+    .enterprise-logo__div span:nth-child(5) {
+        margin-top: -9px;
+        margin-left: 16px;
+    }
+
+    .enterprise-logo__div span:last-child {
+        margin-left: 35px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .who-we-work {
+        padding: 80px 24px 80px 24px;
+        grid-template-columns: 327px;
+        left: -25px;
+    }
+
+    .who-we-work__info {
+        width: 327px;
+    }
+
+    .who-we-work__heading {
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: -0.246px;
+        margin-bottom: 16px;
+    }
+
+    .who-we-work__info p {
+        width: 330px;
+        margin-bottom: 60px;
+    }
+
+    .enterprise-logo__div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
