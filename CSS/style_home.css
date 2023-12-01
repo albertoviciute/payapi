@@ -1,0 +1,343 @@
+:root {
+    --dark-pink: rgb(186, 66, 112);
+    --link-water-white: rgb(251, 252, 254);
+    --san-juan-blue: rgb(54, 86, 107);
+    --mirage-blue: rgb(27, 38, 47);
+    --charm-pink: rgb(218, 109, 151);
+    --light-san-juan-blue: rgb(108, 130, 148);
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: 1fr;
+    max-height: 649px;
+}
+
+.header-container__grid-in-columns h1 {
+    color: #36536b;
+    font-family: 'DM Serif Display';
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 400;
+    margin-bottom: 48px;
+    width: 546px;
+    letter-spacing: -.55px;
+}
+
+.header-container__phone-img-grid:nth-of-type(1) {
+    grid-column-start: 2;
+}
+
+.header-container__grid-in-columns {
+    padding-top: 152px;
+
+}
+
+.header-container__phone-img-grid {
+    display: grid;
+    height: auto;
+    text-align: right;
+    grid-template-columns: 2fr;
+    grid-row: 1;
+    padding-top: 20px;
+    padding-left: 60px;
+}
+
+.header-container__phone-img {
+    display: grid;
+    width: auto;
+    height: auto;
+    min-height: 392px;
+    padding-left: 94px;
+}
+
+.header-container__nav-form {
+    display: grid;
+    grid-template-columns: 280px 180px;
+}
+
+input.header-container__email {
+    width: 390px;
+    height: 48px;
+    background-color: rgb(251, 252, 254);
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    opacity: 50%;
+    border-radius: 25px;
+    border: 0px solid #FBFCFE;
+    padding: 0px 0px 0px 28px;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+
+}
+
+.header-container__nav-form .button--primary-pink {
+    z-index: 10;
+    margin-left: -9px;
+}
+
+
+.header-container__have-any-questions-span {
+    color: rgb(108, 130, 148);
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    padding-left: 28px;
+}
+
+.header-container__contact-us {
+    color: rgba(108, 130, 148, 1);
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+}
+
+.header-container__have-any-questions {
+    padding-top: 15px;
+}
+
+.header-container__have-any-questions a {
+    text-decoration: none;
+}
+
+.header-container__button-text {
+    font-family: Public Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.5px;
+    letter-spacing: -0.115px;
+    color: var(--link-water-white);
+    z-index: 1;
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 376px) {
+
+    .main-content__div:has(.header-container__phone-img) {
+        padding: 41px 40px 0 39px;
+    }
+
+    .header-container {
+        display: block;
+    }
+
+    .header-container__grid-in-columns {
+        padding-top: 0;
+        height: 208px;
+    }
+
+    .button--primary-pink:hover,
+    .button--primary-pink:active {
+        cursor: pointer;
+        background-color: var(--charm-pink);
+    }
+
+    .header-container__phone-img {
+        min-height: unset;
+        width: 252px;
+        height: 397px;
+        padding-left: unset;
+        margin: 13px 173px 7px 173px;
+    }
+
+    .header-container__phone-img-grid {
+        margin-bottom: -20px;
+        padding-top: unset;
+    }
+
+
+    .header-container__button-text {
+        font-family: Public Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 0.5px;
+        letter-spacing: -0.115px;
+        color: var(--link-water-white);
+        z-index: 1;
+    }
+
+
+    input[type="header-container__email"] {
+        width: 430px;
+        height: 48px;
+        background-color: rgb(251, 252, 254);
+        font-family: Public Sans;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+        opacity: 50%;
+        border-radius: 25px;
+        border: 0px solid #FBFCFE;
+        margin: 10px;
+    }
+
+    .header-container__nav-form {
+        margin-left: 125px;
+    }
+
+    .input.header-container__email {
+        margin-top: 10px;
+    }
+
+    .header-container__grid-in-columns h1 {
+        font-size: 48px;
+        letter-spacing: -0.37px;
+        margin-left: 60px;
+        margin-top: -22px;
+        line-height: 56px;
+        margin-bottom: 22px;
+        width: 567px;
+    }
+
+    .header-container__nav-form .button--primary-pink {
+        width: 173px;
+        height: 48px;
+        margin-top: 10px;
+    }
+
+    .header-container__have-any-questions-span {
+        color: rgb(108, 130, 148);
+        font-family: Public Sans;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-left: 28px;
+    }
+
+    .header-container__have-any-questions {
+        margin-left: -30px;
+    }
+
+    .header-container__contact-us {
+        color: rgba(108, 130, 148, 1);
+        font-family: Public Sans;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 17.63px;
+        letter-spacing: 0px;
+    }
+
+    input.header-container__email {
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+
+    .header-container {
+        display: block;
+    }
+
+    .header-container__phone-img-grid {
+        padding-top: unset;
+        padding-left: unset;
+    }
+
+    .header-container__button-text {
+        font-family: Public Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 0.5px;
+
+        color: var(--link-water-white);
+        z-index: 1;
+        padding: -100;
+
+    }
+
+    .header-container__nav-form .button--primary-pink {
+        margin-left: 0px;
+        margin-top: 14px;
+        width: 327px;
+        height: 48px;
+        letter-spacing: -0.3px;
+    }
+
+    .button--primary-pink:hover,
+    .button--primary-pink:active {
+        cursor: pointer;
+        background-color: var(--charm-pink);
+    }
+
+    .header-container__phone-img {
+        width: 200px;
+        height: 317px;
+        margin: 3px 75px;
+        padding: 0;
+        min-height: unset;
+    }
+
+    .header-container__phone-img-grid {
+        display: grid;
+        max-width: 376px;
+
+    }
+
+    .header-container__grid-in-columns h1 {
+        max-width: 327px;
+        font-size: 32px;
+        letter-spacing: -0.24px;
+        line-height: 36px;
+        margin-bottom: 25px;
+    }
+
+    input.header-container__email {
+        width: 300px;
+    }
+
+    .header-container__grid-in-columns {
+        margin-top: -30px;
+        padding-top: unset;
+    }
+
+    .header-container__nav-form {
+        padding-left: 0px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    input[type="header-container__email"] {
+        height: 48px;
+        background-color: rgb(251, 252, 254);
+        font-family: Public Sans;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18px;
+        text-align: left;
+        opacity: 50%;
+        border-radius: 25px;
+        border: 0px solid;
+        max-width: 295px;
+        height: 48px;
+        padding-left: 28px;
+        margin-left: 15px;
+
+    }
+
+    .header-container__have-any-questions {
+        padding: 0;
+        margin-left: -33px;
+        margin-top: 24px;
+    }
+    .header-container__contact-us {
+        letter-spacing: 0.2px;
+    }
+    
+    
+}
