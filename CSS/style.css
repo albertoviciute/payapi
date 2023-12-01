@@ -321,7 +321,7 @@ footer {
  .container-bottom {
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 100px 0 187px 0;
  }
 
  .container-bottom h2 {
