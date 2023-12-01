@@ -141,6 +141,7 @@
         min-width: 768px;
         left: -39px;  
         height: 615px;
+        margin-top: 117px;
     }
 
     .who-we-work__info {
@@ -184,6 +185,7 @@
         grid-template-columns: 327px;
         left: -25px;
         height: 509px;
+        margin-top: 80px;
     }
 
     .who-we-work__info {

@@ -7,6 +7,10 @@
   --light-san-juan-blue: rgb(108, 130, 148);
 }
 
+.main-content{
+  position: absolute;
+}
+
 .main-content__div {
   background-color: #edf3f8;
   background-image: url(../IMG/bg-pattern-circle.svg);
@@ -14,6 +18,7 @@
   background-position: 800px -172px;
   padding: 40px 165px 0 165px;
   overflow: hidden;
+  max-width: 1110px;
 }
 
 .menu-mobile {
@@ -312,6 +317,7 @@ footer {
     padding: 45px 40px 0 39px;
     background-position: -91px -663px;
     background-size: 949px;
+    max-width: 702px;
   }
 
   .menu-mobile {
@@ -353,6 +359,10 @@ footer {
   .main-content__div {
     padding: 40px 24px 0 24px;
     background-position: -202px -550px;
+  }
+
+  .main-content{
+    position: unset;
   }
 
   .navbar-left li:nth-child(2) {
