@@ -113,7 +113,11 @@
   
   
   @media screen and (max-width: 768px) and (min-width: 376px) {
-  
+    .main-content__div {
+      padding: 40px 40px 0 39px;
+      background-position: 485px -610px;
+  }
+
     .pricing-main__container {
       text-align: center;
     }
@@ -125,7 +129,7 @@
     .pricing-heading {
       font-size: 48px;
       letter-spacing: -0.369px;
-      margin: 80px 0 69px 0;
+      margin: 74px 0 69px 0;
     }
   
     .pricing-main__headings {
