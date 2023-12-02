@@ -156,6 +156,13 @@
     display: flex;
     justify-content: center;
   }
+
+  .pricing-main .button--primary-blue {
+    margin-top: 26px;
+  }
+  .pricing-main__container .container-bottom {
+    padding: 100px 0 189px 0;
+  }
 }
 
 @media screen and (max-width: 376px) {

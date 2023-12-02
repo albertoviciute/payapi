@@ -49,12 +49,6 @@
   width: 168px;
   height: 48px;
   color: var(--san-juan-blue);
-  font-family: Public Sans;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.115px;
 }
 
 .button--primary-pink:hover,
@@ -164,7 +158,7 @@
   padding: 16px 276px 14px 0px;
 }
 
-.item-bottom-right input:focus {
+.item-bottom-right input {
   color: #36536b;
   font-family: Public Sans;
   font-size: 15px;
@@ -326,11 +320,15 @@ footer {
     padding: 45px 40px 0 39px;
     background-position: -91px -663px;
     background-size: 949px;
-    max-width: 702px;
+    max-width: 689px;
   }
 
   .menu-mobile {
     display: none;
+  }
+
+  footer{
+    max-width: 768px;
   }
 
   .footer {

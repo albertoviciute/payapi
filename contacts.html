@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./IMG/payapi-logo.svg" type="image/png" sizes="25x50">
+    <link rel="icon" href="./IMG/favicon-32x32.png" type="image/png" sizes="25x50">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=DM+Serif+Display&display=swap"
@@ -14,9 +14,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="/CSS/contacts.css">
+    <link rel="stylesheet" href="./CSS/contacts.css">
     <script src="./JS/main.js" defer></script>
-    <title>Payapi</title>
+    <title>PayAPI</title>
 </head>
 
 <body>
@@ -42,25 +42,50 @@
                         <h1>Submit a help request and
                             we’ll get in touch shortly.</h1>
                     </div>
-                    <div class="main-contact-form__main-contact">
+                    <div class="main-content__contacts">
                         <form class="main-contact-form__contact-form">
-                            <input class="contact-name" type="text" id="contact-name" name="contact-name" value="Name">
-                            <input class="email-contact" type="email-contact" id="email-contact" name="email-contact"
-                                value="Email Address">
-                            <input class="company-name" id="company-name" name="company-name" value="Company name">
-                            <input class="title" type="text" id="title" name="title" value="Title">
-                            <input class="message" type="text" id="message" name="message" value="Message">
+                            <input class="contact-name" type="text" id="contact-name" name="contact-name" placeholder="Name" oninput="addBorder(this);" onblur="checkIfInputIsEmpty(this);">
+                            <input class="email-contact" type="email" id="email-contact" name="email-contact"
+                                placeholder="Email Address" oninput="addBorder(this);"  onblur="checkIfInputIsEmpty(this);">
+                            <input class="company-name" id="company-name" type="text" name="company-name" placeholder="Company name">
+                            <input class="title" type="text" id="title" name="title" placeholder="Title">
+                            <textarea class="message" id="message" name="message" placeholder="Message"></textarea>
+                            <div class="ready-to-start">
+                                <label class="container">
+                                    <input type="checkbox" >
+                                    <span class="checkmark"></span>
+                                  </label>              
+                                <label class="main-contact-form__agree" for="agree" id="agree-text">Stay up-to-date with company
+                                    announcements and updates to our API</a></label>
+                            </div>
+                            <button class="button-text button--primary-blue">Submit</button>
                         </form>
-                    </div>
-                    <div class="ready-to-start">
-                        <input class="main-contact-form__checkbox" type="checkbox" id="agree">
-                        <label class="main-contact-form__agree" for="agree" id="agree-text">Stay up-to-date with company
-                            announcements and updates to our API</a></label>
-                    </div>
-                    <input class="main-contact-form__submit-button" type="submit" id="submit-button" value="Submit">
-                    <!-- <h2>Ready to start?</h2>  -->
-                </div>
+                        <div class="contact__main--right">
+                            <h3>Join the thousands of innovators that are already building with us</h3>
+                            <div class="enterprise-logo__div">
+                                <span class="span-tesla"></span>
+                                <span class="span-microsoft"></span>
+                                <span class="span-hewlett"></span>
+                                <span class="span-oracle"></span>
+                                <span class="span-google"></span>
+                                <span class="span-nvidia"></span>
+                            </div>
 
+                        </div>
+                        
+                        
+                    </div>
+
+                </div>
+                <section class="container-bottom">
+                    <div class="item-bottom-left">
+                        <h2>Ready to start?</h2>
+                    </div>
+                    <form class="item-bottom-right">
+                        <input type="email" id="email" placeholder="Enter email address">
+                        <button class="button-text button--primary-pink button-bottom">Schedule a Demo</button>
+                    </form>
+                </section>
             </main>
         </div>
         <footer>
