@@ -35,20 +35,12 @@
 }
 
 .header-container__phone-img-grid {
-    display: grid;
-    height: auto;
-    text-align: right;
-    grid-template-columns: 2fr;
     grid-row: 1;
     padding-top: 20px;
     padding-left: 60px;
 }
 
 .header-container__phone-img {
-    display: grid;
-    width: auto;
-    height: auto;
-    min-height: 392px;
     padding-left: 94px;
 }
 
@@ -66,23 +58,23 @@ input.header-container__email::placeholder {
     color: #36536b;
     opacity: 0.5;
     padding: 16px 276px 14px 0px;
-  }
+}
 
-  input.header-container__email{
+input.header-container__email {
     width: 390px;
     height: 48px;
     background-color: rgb(251, 252, 254);
     color: #36536b;
-  font-family: Public Sans;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  border-radius: 25px;
-  border: 0px solid #FBFCFE;
-  padding: 0px 0px 0px 28px;
-  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-  }
+    font-family: Public Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 25px;
+    border: 0px solid #FBFCFE;
+    padding: 0px 0px 0px 28px;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
 
 
 .header-container__nav-form .button--primary-pink {
@@ -118,18 +110,6 @@ input.header-container__email::placeholder {
     text-decoration: none;
 }
 
-.header-container__button-text {
-    font-family: Public Sans;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 0.5px;
-    letter-spacing: -0.115px;
-    color: var(--link-water-white);
-    z-index: 1;
-
-}
-
 @media screen and (max-width: 768px) and (min-width: 376px) {
 
     .main-content__div:has(.header-container__phone-img) {
@@ -145,12 +125,6 @@ input.header-container__email::placeholder {
         height: 208px;
     }
 
-    .button--primary-pink:hover,
-    .button--primary-pink:active {
-        cursor: pointer;
-        background-color: var(--charm-pink);
-    }
-
     .header-container__phone-img {
         min-height: unset;
         width: 252px;
@@ -162,35 +136,6 @@ input.header-container__email::placeholder {
     .header-container__phone-img-grid {
         margin-bottom: -20px;
         padding-top: unset;
-    }
-
-
-    .header-container__button-text {
-        font-family: Public Sans;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 0.5px;
-        letter-spacing: -0.115px;
-        color: var(--link-water-white);
-        z-index: 1;
-    }
-
-
-    input[type="header-container__email"] {
-        width: 430px;
-        height: 48px;
-        background-color: rgb(251, 252, 254);
-        font-family: Public Sans;
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 18px;
-        letter-spacing: 0px;
-        text-align: left;
-        opacity: 50%;
-        border-radius: 25px;
-        border: 0px solid #FBFCFE;
-        margin: 10px;
     }
 
     .header-container__nav-form {
@@ -258,31 +203,12 @@ input.header-container__email::placeholder {
         padding-left: unset;
     }
 
-    .header-container__button-text {
-        font-family: Public Sans;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 0.5px;
-
-        color: var(--link-water-white);
-        z-index: 1;
-        padding: -100;
-
-    }
-
     .header-container__nav-form .button--primary-pink {
         margin-left: 0px;
         margin-top: 14px;
         width: 327px;
         height: 48px;
         letter-spacing: -0.3px;
-    }
-
-    .button--primary-pink:hover,
-    .button--primary-pink:active {
-        cursor: pointer;
-        background-color: var(--charm-pink);
     }
 
     .header-container__phone-img {
@@ -323,33 +249,14 @@ input.header-container__email::placeholder {
         flex-direction: column;
     }
 
-
-    input[type="header-container__email"] {
-        height: 48px;
-        background-color: rgb(251, 252, 254);
-        font-family: Public Sans;
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 18px;
-        text-align: left;
-        opacity: 50%;
-        border-radius: 25px;
-        border: 0px solid;
-        max-width: 295px;
-        height: 48px;
-        padding-left: 28px;
-        margin-left: 15px;
-
-    }
-
     .header-container__have-any-questions {
         padding: 0;
         margin-left: -33px;
         margin-top: 24px;
     }
+
     .header-container__contact-us {
         letter-spacing: 0.2px;
     }
-    
-    
+
 }
