@@ -329,6 +329,7 @@ footer {
 
   footer > div{
     width: 1770px;
+    overflow: hidden;
   }
 
   .who-we-work__section{
