@@ -57,21 +57,33 @@
     grid-template-columns: 280px 180px;
 }
 
-input.header-container__email {
+input.header-container__email::placeholder {
+    font-family: Public Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #36536b;
+    opacity: 0.5;
+    padding: 16px 276px 14px 0px;
+  }
+
+  input.header-container__email{
     width: 390px;
     height: 48px;
     background-color: rgb(251, 252, 254);
-    font-family: Public Sans;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 18px;
-    opacity: 50%;
-    border-radius: 25px;
-    border: 0px solid #FBFCFE;
-    padding: 0px 0px 0px 28px;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    color: #36536b;
+  font-family: Public Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 25px;
+  border: 0px solid #FBFCFE;
+  padding: 0px 0px 0px 28px;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  }
 
-}
 
 .header-container__nav-form .button--primary-pink {
     z-index: 10;
