@@ -125,6 +125,17 @@
 
 @media screen and (max-width: 768px) and (min-width: 376px) {
 
+    .main-content__div:first-child {
+        padding: 40px 24px 0 24px;
+        background-position: 74px -644px;
+      }
+
+    .main-content__div:first-child {
+        padding: 40px 40px 0 39px;
+        background-position: 505px -464px;
+        background-size: 780px;
+    }
+
     .about-main-title {
         text-align: center;
         font-size: 48px;
@@ -194,6 +205,10 @@
 
     .about-our__main-bottom {
         margin: 65px 0 -25px 0;
+    }
+
+    footer{
+        max-width: 768px;
     }
 }
 
