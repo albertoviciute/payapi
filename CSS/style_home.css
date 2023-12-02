@@ -133,7 +133,7 @@ input.header-container__email::placeholder {
 @media screen and (max-width: 768px) and (min-width: 376px) {
 
     .main-content__div:has(.header-container__phone-img) {
-        padding: 41px 40px 0 39px;
+        padding: 41px 40px 117px 39px;
     }
 
     .header-container {

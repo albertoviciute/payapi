@@ -7,3 +7,7 @@ function checkIfInputIsEmpty(element){
         element.style.borderBottom = '1px solid rgba(54, 83, 107, 0.25)';
     }
 }
+
+function redirectToAboutPage(){
+    window.location.href = 'about.html';
+}
