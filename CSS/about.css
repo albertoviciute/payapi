@@ -72,7 +72,7 @@
     z-index: 2;
 }
 
-.footer-bubble {
+.about-bubble {
     width: 780px;
     height: 780px;
     border-radius: 780px;
@@ -167,6 +167,11 @@
         max-height: 513px;
     }
 
+    .about-bubble{
+        width: 0;
+        height: 0;
+    }
+
     .about-statistics__inner h4 {
         font-weight: 100;
         width: 223px;
@@ -248,6 +253,11 @@
         width: 376px;
         height: 300px;
     }
+    
+    .about-bubble{
+        width: 0;
+        height: 0;
+    }
 
     .about-photo__container {
         margin-top: 76px;
@@ -286,4 +296,3 @@
         border-bottom: 1px solid rgba(54, 83, 107, 0.25);
     }
 }
-nieko
