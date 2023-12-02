@@ -4,7 +4,7 @@
   --san-juan-blue: rgb(54, 83, 107);
 }
 
-.main-content__div {
+.main-content__div:first-child  {
   background-color: #edf3f8;
   background-image: url(../IMG/bg-pattern-circle.svg);
   background-repeat: no-repeat;
