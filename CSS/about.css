@@ -19,7 +19,7 @@
 }
 
 .about-our__main-bottom {
-    margin: 72px 0 0 0;
+    margin: 72px 0 4px 0;
 }
 
 .about-our-inner {
@@ -56,9 +56,11 @@
     object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    z-index: 3;
 }
 
-.about-page-mobile-photo{
+.about-page-mobile-photo {
     display: none;
 }
 
@@ -66,6 +68,20 @@
     margin-top: 100px;
     margin-bottom: 70px;
     margin-left: -165px;
+    position:relative;
+    z-index: 2;
+}
+
+.footer-bubble {
+    width: 780px;
+    height: 780px;
+    border-radius: 780px;
+    background: #36536b;
+    position: absolute;
+    z-index: 1;
+    right: 1182px;
+    top: 620px;
+    opacity: 0.1;
 }
 
 .about-statistics__inner h4 {
@@ -172,7 +188,7 @@
     }
 
     .about-our__main-bottom {
-        margin: 65px 0 0 0;
+        margin: 65px 0 -25px 0;
     }
 }
 
@@ -185,7 +201,7 @@
         letter-spacing: -0.246px;
         width: 327px;
         height: 152px;
-        padding: 40px 0 0 0;
+        padding: 46px 0 0 0;
     }
 
     .about-our-inner {
@@ -196,6 +212,10 @@
     .about-our__main {
         margin: 37px 0 0 0;
         padding: unset;
+    }
+
+    .about-our__main-bottom {
+        margin: 46px 0 47px 0;
     }
 
     .about-our-inner>h3 {
@@ -209,7 +229,7 @@
     .about-our-inner p {
         text-align: center;
         width: 327px;
-        margin-top: 16px;
+        margin-top: 15px;
     }
 
     .about-our-inner:first-child {
@@ -219,8 +239,8 @@
     .about-page-photo {
         display: none;
     }
-    
-    .about-page-mobile-photo{
+
+    .about-page-mobile-photo {
         display: block;
         object-fit: cover;
         background-position: center;
@@ -228,14 +248,14 @@
         width: 376px;
         height: 300px;
     }
-    
+
     .about-photo__container {
         margin-top: 76px;
         margin-bottom: 48px;
         margin-left: -24px;
     }
 
-    .about-statistics{
+    .about-statistics {
         flex-direction: column;
     }
 
@@ -251,7 +271,7 @@
         opacity: 0.7;
         width: 327px;
     }
-    
+
     .about-statistics__inner h3 {
         text-align: center;
         width: 327px;
