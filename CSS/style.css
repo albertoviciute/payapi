@@ -167,6 +167,15 @@
   line-height: normal;
 }
 
+.item-bottom-right input {
+  color: #36536b;
+  font-family: Public Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .button-bottom {
   z-index: 2;
 }
