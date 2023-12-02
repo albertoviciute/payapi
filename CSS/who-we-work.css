@@ -3,9 +3,8 @@
     display: grid;
     grid-template-columns: 576px 575px;
     grid-template-rows: auto auto;
-    min-width: 1440px;
+    width: 1112px;
     position: relative;
-    left: -165px;
     padding: 100px 163px 100px 165px;
     overflow: hidden;
     height: 272px;
@@ -135,13 +134,18 @@
         margin-left: 9px;
     }
 
+    .who-we-work__section{
+        max-width: 767px;
+        overflow: hidden;
+    }
+
     .who-we-work {
-        padding: 90px 116px 88px 107px;
         grid-template-columns: 554px;
         min-width: 768px;
-        left: -39px;  
-        height: 438px;
-        margin-top: 117px;
+        text-align: center;
+        left: -58px;
+        height: 425px;
+        padding: 89px 163px 100px 165px;
     }
 
     .who-we-work__info {
@@ -180,6 +184,11 @@
 }
 
 @media screen and (max-width: 376px) {
+
+    .main-content{
+        background-color: #edf3f8;
+    }
+    
     .who-we-work {
         padding: 80px 24px 80px 24px;
         grid-template-columns: 327px;
