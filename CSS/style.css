@@ -310,11 +310,20 @@ footer {
   background-image: url(../IMG/linkedin-logo--pink.svg);
 }
 
+@media screen and (min-width: 1678px) {
+  .main-content__div:first-child{
+    padding: 40px 300px 0 300px !important;
+  }
+}
 @media screen and (min-width: 1441px) {
 
   .main-content__div,
   .main-content {
     margin: 0 auto;
+  }
+
+  .main-content__div:first-child{
+    padding: 40px 200px 0 200px !important;
   }
 
   .main-content {

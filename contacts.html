@@ -39,25 +39,26 @@
             <main>
                 <div class="main-contact-form">
                     <div class="main-contact-form__main-text">
-                        <h1><span>Submit a help request</span> and we’ll get in touch shortly.</h1>
+                        <h1><span>Submit a help request</span> and we&rsquo;ll get in touch shortly.</h1>
                     </div>
-                    <div class="main-content__contacts">
-                        <form class="main-contact-form__contact-form">
-                            <input class="contact-name" type="text" id="contact-name" name="contact-name" placeholder="Name" oninput="addBorder(this);" onblur="checkIfInputIsEmpty(this);">
-                            <input class="email-contact" type="email" id="email-contact" name="email-contact"
-                                placeholder="Email Address" oninput="addBorder(this);"  onblur="checkIfInputIsEmpty(this);">
-                            <input class="company-name" id="company-name" type="text" name="company-name" placeholder="Company name">
+                    <div class="main-content__contacts" >
+                        <form class="main-contact-form__contact-form" id="contactForm" action="#">
+                            <input class="contact-name" type="text" id="contactName" name="contact-name" placeholder="Name" maxlength="25">
+                            <div>
+                                <input class="email-contact" type="email" id="contactEmail" name="email-contact" placeholder="Email Address">
+                                <span id="error" class="error-message"></span>
+                            </div>
+                            <input class="company-name" id="companyName" type="text" name="company-name" placeholder="Company Name">
                             <input class="title" type="text" id="title" name="title" placeholder="Title">
-                            <textarea class="message" id="message" name="message" placeholder="Message"></textarea>
+                            <textarea class="message" id="message" name="message" placeholder="Message" maxlength="300"></textarea>
                             <div class="ready-to-start">
                                 <label class="container">
-                                    <input type="checkbox" >
+                                    <input type="checkbox" id="checkbox" name="checkbox">
                                     <span class="checkmark"></span>
                                   </label>              
-                                <label class="main-contact-form__agree" for="agree" id="agree-text">Stay up-to-date with company
-                                    announcements and updates to our API</a></label>
+                                <label class="main-contact-form__agree" for="checkbox">Stay up-to-date with company announcements and updates to our API</label>
                             </div>
-                            <button class="button-text button--primary-blue">Submit</button>
+                            <button class="button-text button--primary-blue" type="submit" id="fromButton">Submit</button>
                         </form>
                         <div class="contact__main--right">
                             <h3>Join the thousands of innovators that are already building with us</h3>
@@ -69,10 +70,7 @@
                                 <span class="span-google"></span>
                                 <span class="span-nvidia"></span>
                             </div>
-
-                        </div>
-                        
-                        
+                        </div>    
                     </div>
 
                 </div>

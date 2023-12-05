@@ -31,9 +31,8 @@
 }
 
 .main-contact-form__contact-form {
-    display: grid;
-    grid-template-columns: 445px;
-    grid-template-rows: 65px 65px 65px 65px 89px;
+    display: flex;
+    flex-direction: column;
     margin-top: 55px;
     width: 556px;
 }
@@ -50,8 +49,14 @@ textarea::placeholder {
     opacity: 0.5;
 }
 
-input,
-textarea {
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+}
+
+input, textarea {
     border: none;
     border-bottom: 1px solid rgba(54, 83, 107, 0.25);
     padding-left: 20px;
@@ -66,6 +71,15 @@ textarea {
     letter-spacing: -0.115px;
     opacity: unset;
     padding-bottom: 8px;
+}
+
+input{
+    height: 42px;
+    margin-bottom: 14px;
+}
+
+textarea{
+    height: 89px;
 }
 
 .message {
@@ -233,6 +247,47 @@ textarea {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.error-message {
+    color: #F00;
+    font-family: Public Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.085px;
+    padding-left: 20px;
+}
+
+.email-contact {
+    width: 423px;
+}
+
+.div-error {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6px;
+}
+
+.div-error .email-contact::placeholder{
+    color: rgba(255, 0, 0, 1);
+}
+.div-error .email-contact{
+    border-bottom: 1px solid rgba(255, 0, 0, 0.5);
+    margin-bottom: 7px;
+}
+
+.main-contact-form__contact-form:has(.div-error) .ready-to-start {
+    margin-top: 0;
+}
+
+.main-content__contacts:has(.div-error) .contact__main--right {
+    margin-top: 5px;
+}
+
+.border-bottom--dark {
+    border-bottom: 1px solid rgba(54, 83, 107);
 }
 
 @media screen and (max-width: 768px) and (min-width: 376px) {
