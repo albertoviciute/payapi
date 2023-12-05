@@ -311,7 +311,6 @@ footer {
 }
 
 @media screen and (min-width: 1441px) {
-
   .main-content__div,
   .main-content {
     margin: 0 auto;
@@ -327,20 +326,19 @@ footer {
     justify-content: center;
   }
 
-  footer > div{
+  footer > div {
     width: 1770px;
     overflow: hidden;
   }
 
-  .who-we-work__section{
+  .who-we-work__section {
     display: flex;
     justify-content: center;
-    background: #1B262F;
+    background: #1b262f;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 376px) {
-
   .main-content__div {
     max-width: 689px;
     padding: 0 40px 0 39px;
@@ -427,6 +425,64 @@ footer {
   .menu-mobile {
     display: flex;
     padding-left: 164px;
+  }
+
+  .button-mobile-menu {
+    width: 252px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: flex;
+    z-index: 20;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: -52px;
+    left: -85px;
+    background-color: #1b262f;
+    background-image: url(../IMG/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: -277px -550px;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    width: 300px;
+    height: 667px;
+    z-index: 20;
+  }
+
+  .dropdown-content li {
+    list-style-type: none;
+  }
+
+  .dropdown-content li:first-child {
+    text-align: right;
+    padding-top: 48px;
+    padding-bottom: 24px;
+    padding-right: 27px;
+  }
+
+  .dropdown-content li:nth-child(2) {
+    padding-bottom: 43px;
+  }
+
+  .dropdown-content a {
+    color: #fbfcfe;
+    text-align: center;
+    font-family: Public Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 32px;
+    opacity: 0.7;
+  }
+
+  .show {
+    display: block;
   }
 
   .container-bottom {
