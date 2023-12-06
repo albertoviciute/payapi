@@ -13,7 +13,7 @@ function redirectToAboutPage(){
 }
 
 function showMobileMenu(){
-    document.getElementById("mobileDropdown").classList.toggle("show");
+    document.querySelector(".dropdown-content").classList.toggle("show")
 }
 
 window.onclick = function(event) {
