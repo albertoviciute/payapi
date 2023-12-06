@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./CSS/who-we-work.css">
     <link rel="stylesheet" href="./CSS/style_home.css">
     <script src="./JS/main.js" defer></script>
+    <script src="./JS/validation.js" defer></script>
     <title>PayAPI</title>
 </head>
 
@@ -60,7 +61,7 @@
                             <form class="header-container__nav-form" id="formScheduleDemo">
                                 <input class="header-container__email" type="email" id="inputScheduleDemo"
                                     placeholder="Enter email address">
-                                <button class="button-text button--primary-pink" id="buttonScheduleDemo">Schedule a Demo</button>
+                                <button class="button-text button--primary-pink" id="buttonScheduleDemo" onclick="scheduleDemoForm(event);">Schedule a Demo</button>
                                 <div id="error" class="error-message"></div>
                             </form>
                             <div class="header-container__have-any-questions">

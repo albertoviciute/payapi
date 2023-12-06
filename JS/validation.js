@@ -7,20 +7,23 @@ const title = document.getElementById('title');
 const message = document.getElementById('message');
 const contactCheck = document.getElementById('checkbox');
 const formValues = [contactName, contactEmail, company, title, message];
+const scheduleForm = document.getElementById('formScheduleDemo');
+const scheduleInput = document.getElementById('inputScheduleDemo');
+const scheduleButton= document.getElementById('buttonScheduleDemo');
 
 
-button.addEventListener('click', (e) => {
-    e.preventDefault();
-    const isValid = validateForm(formValues);
+// button.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     const isValid = validateForm(formValues);
 
-    if (isValid) {
-        const sanitizedValues = sanitizeValues(formValues);
-        const fakeEndpoint = 'https://jsonplaceholder.typicode.com/posts';
-        console.log(sanitizedValues)
-        // fetch(fakeEndpoint, {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json',
+//     if (isValid) {
+//         const sanitizedValues = sanitizeValues(formValues);
+//         const fakeEndpoint = 'https://jsonplaceholder.typicode.com/posts';
+//         console.log(sanitizedValues)
+//         // fetch(fakeEndpoint, {
+//         //     method: 'POST',
+//         //     headers: {
+//         //         'Content-Type': 'application/json',
         //     },
         //     body: JSON.stringify(sanitizedValues),
         // })
@@ -35,15 +38,15 @@ button.addEventListener('click', (e) => {
         //         console.log('Form submitted successfully:', responseData);
         //     })
         //     .catch(error => {
-        //         console.error('An error occurred during form submission:', error);
-        //     });
-        }
-    contactForm.reset();
-    resetInputBorder();
-    formValues.forEach(element => {
-        resetInputBorder(element, 1);
-    });
-});
+//         //         console.error('An error occurred during form submission:', error);
+//         //     });
+//         }
+//     contactForm.reset();
+//     resetInputBorder();
+//     formValues.forEach(element => {
+//         resetInputBorder(element, 1);
+//     });
+// });
 
 function sanitizeValues(formValues) {
     const sanitizedFormValues = {};
@@ -82,10 +85,10 @@ function sanitizeValues(formValues) {
 }
 
 
-formValues.forEach(element => {
-    element.onblur = () => resetInputBorder(element, 2);
-    element.onfocus = () => element.classList.add('border-bottom--dark');
-});
+// formValues.forEach(element => {
+//     element.onblur = () => resetInputBorder(element, 2);
+//     element.onfocus = () => element.classList.add('border-bottom--dark');
+// });
 
 
 function resetInputBorder(element, mode) {
@@ -159,9 +162,23 @@ function validEmailInput(email) {
     return false;
 }
 
-contactName.addEventListener('input', function () {
-    this.value = this.value.replace(/[^\p{L}\s]/gu, '');
-});
-title.addEventListener('input', function () {
-    this.value = this.value.replace(/[^\p{L}\s\d]/gu, '');
-});
+// contactName.addEventListener('input', function () {
+//     this.value = this.value.replace(/[^\p{L}\s]/gu, '');
+// });
+// title.addEventListener('input', function () {
+//     this.value = this.value.replace(/[^\p{L}\s\d]/gu, '');
+// });
+
+function validateFormSchedule(element) {
+    element.value.trim();
+    return validEmailInput(scheduleInput);
+}
+
+function scheduleDemoForm(e){
+    e.preventDefault();
+    const isValid = validateFormSchedule(scheduleInput);
+    if(isValid){
+        console.log(scheduleInput.value)
+    }
+    scheduleForm.reset();
+}
