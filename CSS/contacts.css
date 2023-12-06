@@ -73,12 +73,12 @@ input, textarea {
     padding-bottom: 8px;
 }
 
-input{
+.main-contact-form__contact-form input{
     height: 42px;
     margin-bottom: 14px;
 }
 
-textarea{
+.main-contact-form__contact-form textarea{
     height: 89px;
 }
 
@@ -437,6 +437,14 @@ textarea{
         font-size: 15px;
         line-height: 25px;
         letter-spacing: -0.11538461595773697px;
+    }
+
+    .error-message {
+        text-align: left;
+    }
+    
+    .email-contact{
+        width: 305px;
     }
 
     .ready-to-start {
