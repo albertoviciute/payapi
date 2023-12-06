@@ -28,6 +28,10 @@
   display: none;
 }
 
+.dropdown {
+  display: none;
+}
+
 .button-text {
   font-family: Public Sans;
   font-size: 15px;
@@ -316,7 +320,6 @@ footer {
   }
 }
 @media screen and (min-width: 1441px) {
-
   .main-content__div,
   .main-content {
     margin: 0 auto;
@@ -331,25 +334,28 @@ footer {
     background-color: #edf3f8;
   }
 
+  .dropdown {
+    display: none;
+  }
+
   footer {
     display: flex;
     justify-content: center;
   }
 
-  footer > div{
+  footer > div {
     width: 1770px;
     overflow: hidden;
   }
 
-  .who-we-work__section{
+  .who-we-work__section {
     display: flex;
     justify-content: center;
-    background: #1B262F;
+    background: #1b262f;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 376px) {
-
   .main-content__div {
     max-width: 689px;
     padding: 0 40px 0 39px;
@@ -363,6 +369,10 @@ footer {
   }
 
   .menu-mobile {
+    display: none;
+  }
+
+  .dropdown {
     display: none;
   }
 
@@ -438,6 +448,73 @@ footer {
     padding-left: 164px;
   }
 
+  .button-mobile-menu {
+    width: 252px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: flex;
+    z-index: 20;
+  }
+
+  .dropdown-content {
+    display: block;
+    max-width: 0;
+    overflow: hidden;
+    position: absolute;
+    top: -52px;
+    right: -23px;
+    background-color: #1b262f;
+    background-image: url(../IMG/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: -277px -550px;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    width: 300px;
+    height: 667px;
+    z-index: 20;
+    transition: max-width 0.7s ease-in-out;
+    text-align: center;
+  }
+
+  .show {
+    max-width: 300px;
+  }
+
+  .dropdown-content li {
+    list-style-type: none;
+  }
+
+  .dropdown-content li:first-child {
+    text-align: right;
+    padding-top: 48px;
+    padding-bottom: 8px;
+    padding-right: 27px;
+  }
+
+  .dropdown-content li:nth-child(2) {
+    padding-bottom: 27px;
+  }
+
+  .dropdown-content a {
+    color: #fbfcfe;
+    text-align: center;
+    font-family: Public Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    opacity: 0.7;
+  }
+
+  .dropdown-content li:nth-child(6) {
+    padding-top: 16px;
+  }
+
   .container-bottom {
     flex-direction: column;
     justify-content: center;
@@ -510,5 +587,144 @@ footer {
   .footer-bubble {
     left: 202px;
     top: -177px;
+  }
+}
+
+/* 3 columns css - Personal Finances, Banking & Coverage, Consumer Payments */
+
+.container-review {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: auto;
+  font-family: "Public Sans";
+  padding: 146.57px 0 0 0;
+}
+
+.container-column__finances {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.container-column__banking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.container-column__consumer-payments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-review img {
+  width: 106px;
+  height: 106px;
+}
+
+.container-review h3 {
+  width: 350px;
+  height: 25px;
+  color: #36536B;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.138px;
+  margin: 32px 0 16px 0;
+}
+
+.container-review p {
+  width: 350px;
+  color: #6C8294;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.115px;
+}
+
+.container-column__finances-photo{
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 376px) {
+  
+  .container-review {
+    padding: 100px 0 0 0;
+    width: 768px;
+  }
+  
+  
+  .container-column__finances {
+    margin-right: 10px;
+  }
+  
+  .container-column__banking {
+    margin-right: 10px;
+  }
+
+  .container-review img {
+    width: 88px;
+    height: 88px;
+  }
+
+  .container-review h3 {
+    width: 223px;
+    margin: 32px 0 16px 0;
+  }
+
+  .container-review p {
+    width: 223px;
+  }
+
+  .container-column__finances-photo{
+    margin-right: unset;
+  }
+}
+
+@media screen and (max-width: 376px) {
+
+  .container-review {
+    flex-direction: column;
+    padding: 80px 0 80px 0;
+  }  
+
+  .container-column__finances {
+    margin-right: unset;
+    margin-bottom: 48px;
+  }
+
+  .container-column__banking {
+    margin-right: unset;
+    margin-bottom: 48px;
+  }
+
+  .container-review img {
+    width: 106px;
+    height: 106px;
+  }
+
+  .container-review h3 {
+    width: 328px;
+    margin: 33px 0 16px 0;
+  }
+
+  .container-review p {
+    width: 328px;
+  }
+
+  .main-content__div:has(.container-review){
+    padding: 40px 24px 0 24px;
+  }
+
+  .container-column__finances-photo{
+    margin-right: unset;
   }
 }
