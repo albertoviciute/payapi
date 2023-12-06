@@ -450,6 +450,10 @@ input, textarea {
     .ready-to-start {
         margin-top: -11px;
     }
+    
+    .main-content__contacts:has(.div-error) .contact__main--right {
+        margin-top: 80px;
+    }
 
     .main-contact-form .button--primary-blue {
         margin-left: unset;

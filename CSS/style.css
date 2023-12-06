@@ -445,7 +445,7 @@ footer {
 
   .menu-mobile {
     display: flex;
-    padding-left: 164px;
+    margin-left: 164px;
   }
 
   .button-mobile-menu {
@@ -487,9 +487,9 @@ footer {
 
   .dropdown-content li:first-child {
     text-align: right;
-    padding-top: 48px;
-    padding-bottom: 8px;
-    padding-right: 27px;
+    margin-top: 48px;
+    margin-bottom: 8px;
+    margin-right: 27px;
   }
 
   .dropdown-content li:nth-child(2) {
