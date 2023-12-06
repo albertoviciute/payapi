@@ -78,7 +78,7 @@ input.header-container__email {
 
 
 .header-container__nav-form .button--primary-pink {
-    z-index: 10;
+    z-index: 9;
     margin-left: -9px;
 }
 
