@@ -112,7 +112,7 @@ input.header-container__email {
 
 @media screen and (max-width: 768px) and (min-width: 376px) {
 
-    .main-content__div:has(.header-container__phone-img) {
+    .main-content__div:first-child {
         padding: 41px 40px 117px 39px;
     }
 
@@ -211,6 +211,18 @@ input.header-container__email {
         letter-spacing: -0.3px;
     }
 
+    #formScheduleDemo .button--primary-pink {
+        margin-left: 0;
+        margin-top: 0;
+        width: 327px;
+        height: 48px;
+        letter-spacing: -0.3px;
+    }
+
+    #formScheduleDemo  .container-bottom h2 {
+        margin-bottom: 28px;
+    }
+    
     .header-container__phone-img {
         width: 200px;
         height: 317px;
