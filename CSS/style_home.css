@@ -112,7 +112,7 @@ input.header-container__email {
 
 @media screen and (max-width: 768px) and (min-width: 376px) {
 
-    .main-content__div:has(.header-container__phone-img) {
+    .main-content__div:first-child {
         padding: 41px 40px 117px 39px;
     }
 
