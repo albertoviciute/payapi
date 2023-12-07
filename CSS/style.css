@@ -398,7 +398,7 @@ footer {
   padding-left: 20px;
 }
 
-.div-error .header-container__email::placeholder{
+.div-error .header-container__email::placeholder, form#formScheduleDemo.div-error #inputScheduleDemo::placeholder{
   color: rgba(255, 0, 0, 1);
 }
 
