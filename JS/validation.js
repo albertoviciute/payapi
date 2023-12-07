@@ -9,7 +9,7 @@ const contactCheck = document.getElementById('checkbox');
 const formValues = [contactName, contactEmail, company, title, message];
 
 
-button.addEventListener('click', (e) => {
+function contactFormSubmit(e){
     e.preventDefault();
     const isValid = validateForm(formValues);
 
@@ -43,7 +43,7 @@ button.addEventListener('click', (e) => {
     formValues.forEach(element => {
         resetInputBorder(element, 1);
     });
-});
+};
 
 function sanitizeValues(formValues) {
     const sanitizedFormValues = {};
@@ -81,13 +81,6 @@ function sanitizeValues(formValues) {
     return sanitizedFormValues;
 }
 
-
-formValues.forEach(element => {
-    element.onblur = () => resetInputBorder(element, 2);
-    element.onfocus = () => element.classList.add('border-bottom--dark');
-});
-
-
 function resetInputBorder(element, mode) {
     if (mode === 1) {
         element.classList.remove('border-bottom--dark');
@@ -100,21 +93,37 @@ function resetInputBorder(element, mode) {
 
 function setErrorMessage(element, message) {
     const inputParent = element.parentElement;
-    const errorSpan = document.getElementById('error');
+    let errorSpan;
+
+    if (inputParent.id.includes('formScheduleDemoTop')) {
+        errorSpan = document.getElementById('errorTop');
+    } else if(inputParent.id.includes('contactDiv')){
+        errorSpan = document.getElementById('contacterror');
+    } else {
+        errorSpan = document.getElementById('error');
+    }
 
     errorSpan.innerText = message;
     inputParent.classList.add('div-error');
 }
 
+
 function removeErrorMessage(element) {
     const inputParent = element.parentElement;
-    const errorSpan = document.getElementById('error');
+    let errorSpan;
 
+    if (inputParent.id.includes('formScheduleDemoTop')) {
+        errorSpan = document.getElementById('errorTop');
+    } else if(inputParent.id.includes('contactDiv')){
+        errorSpan = document.getElementById('contacterror');
+    } else {
+        errorSpan = document.getElementById('error');
+    }
     errorSpan.innerText = '';
     inputParent.classList.remove('div-error');
 }
 
-function validateForm(values) {
+function validateForm(values, email) {
     values.forEach(element => {
         element.value.trim();
     });
@@ -128,8 +137,10 @@ function validEmailInput(email) {
     const lastDotIndex = trimedEmail.lastIndexOf('.');
     const atSignIndex = trimedEmail.indexOf('@');
 
+
+
     if (trimedEmail === '') {
-        setErrorMessage(email, 'This field can’t be empty');
+        setErrorMessage(email, 'The email address provided can’t be empty');
     } else if (!trimedEmail.includes('@')) {
         setErrorMessage(email, "The email address provided must contain the '@' symbol");
     } else if (trimedEmail.includes(' ')) {
@@ -159,9 +170,49 @@ function validEmailInput(email) {
     return false;
 }
 
-contactName.addEventListener('input', function () {
-    this.value = this.value.replace(/[^\p{L}\s]/gu, '');
-});
-title.addEventListener('input', function () {
-    this.value = this.value.replace(/[^\p{L}\s\d]/gu, '');
-});
+const scheduleFormTop = document.getElementById('formScheduleDemoTop');
+const scheduleForm = document.getElementById('formScheduleDemo');
+const scheduleInputTop = document.getElementById('inputScheduleDemoTop');
+const scheduleInput = document.getElementById('inputScheduleDemo');
+
+function validateFormSchedule(element) {
+    element.value.trim();
+    return validEmailInput(element);
+}
+
+function scheduleDemoFormTop(e){
+    e.preventDefault();
+    const isValid = validateFormSchedule(scheduleInputTop);
+    if(isValid){
+        console.log(scheduleInputTop.value)
+    }
+    scheduleFormTop.reset();
+}
+
+function scheduleDemoForm(e){
+    e.preventDefault();
+    const isValid = validateFormSchedule(scheduleInput);
+    if(isValid){
+        console.log(scheduleInput.value)
+    }
+    scheduleForm.reset();
+}
+
+
+const pathname = window.location.pathname;
+const filename = pathname.split('/').pop();
+
+
+if (filename.includes('contacts')){
+    contactName.addEventListener('input', function () {
+        this.value = this.value.replace(/[^\p{L}\s]/gu, '');
+    });
+    title.addEventListener('input', function () {
+        this.value = this.value.replace(/[^\p{L}\s\d]/gu, '');
+    });
+    
+    formValues.forEach(element => {
+        element.onblur = () => resetInputBorder(element, 2);
+        element.onfocus = () => element.classList.add('border-bottom--dark');
+    });
+}
