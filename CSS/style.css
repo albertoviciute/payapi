@@ -1045,11 +1045,7 @@ form.div-error .error-message{
         color: #6C8294;
         max-width: 327px;
     }
-<<<<<<< HEAD
-  /* -------- */
-=======
   
->>>>>>> main
     .main-content__div__simple {
       display: flex;
       flex-direction: column;
@@ -1218,9 +1214,5 @@ form.div-error .error-message{
     margin-right: unset;
   }
 }
-<<<<<<< HEAD
 }
 
-=======
-}
->>>>>>> main
