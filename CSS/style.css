@@ -135,13 +135,14 @@
   padding: 96px 0;
 }
 
-.item-bottom-right {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+
+#formScheduleDemo{
+  display: grid;
+  grid-template-columns: 455px 165px;
+  margin-top: 4px;
 }
 
-.item-bottom-right input {
+#formScheduleDemo #inputScheduleDemo {
   padding: 0;
   background: #fbfcfe;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
@@ -154,7 +155,7 @@
   padding-left: 27px;
 }
 
-.item-bottom-right input::placeholder {
+#formScheduleDemo #inputScheduleDemo::placeholder {
   font-family: Public Sans;
   font-size: 15px;
   font-style: normal;
@@ -165,7 +166,7 @@
   padding: 16px 276px 14px 0px;
 }
 
-.item-bottom-right input {
+#formScheduleDemo #inputScheduleDemo {
   color: #36536b;
   font-family: Public Sans;
   font-size: 15px;
@@ -174,13 +175,21 @@
   line-height: normal;
 }
 
-.item-bottom-right input {
+#formScheduleDemo #inputScheduleDemo {
   color: #36536b;
   font-family: Public Sans;
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+#formScheduleDemo.div-error .error-message {
+  padding-left: 30px;
+  margin-top: 10px;
+  grid-column: 1/3;
+  margin-left: 170px;
+  text-align: left;
 }
 
 .button-bottom {
@@ -314,11 +323,20 @@ footer {
   background-image: url(../IMG/linkedin-logo--pink.svg);
 }
 
-@media screen and (min-width: 1678px) {
-  .main-content__div:first-child{
-    padding: 40px 300px 0 300px !important;
-  }
+
+#formScheduleDemo #inputScheduleDemo:-webkit-autofill,
+#formScheduleDemo #inputScheduleDemo:-webkit-autofill:hover, 
+#formScheduleDemo #inputScheduleDemo:-webkit-autofill:focus, 
+#formScheduleDemo #inputScheduleDemo:-webkit-autofill:active,
+#formScheduleDemoTop #inputScheduleDemoTop:-webkit-autofill,
+#formScheduleDemoTop #inputScheduleDemoTop:-webkit-autofill:hover, 
+#formScheduleDemoTop #inputScheduleDemoTop:-webkit-autofill:focus, 
+#formScheduleDemoTop #inputScheduleDemoTop:-webkit-autofill:active{
+  -webkit-box-shadow: 0 0 0 30px #fbfcfe inset, 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  -webkit-text-fill-color: #36536b;
 }
+
+
 @media screen and (min-width: 1441px) {
   .main-content__div,
   .main-content {
@@ -344,15 +362,51 @@ footer {
   }
 
   footer > div {
-    width: 1770px;
-    overflow: hidden;
+    width: 1440px;
+    overflow: unset !important;
   }
 
   .who-we-work__section {
     display: flex;
     justify-content: center;
     background: #1b262f;
+    overflow: hidden;
   }
+
+  .who-we-work {
+     overflow: unset !important;
+  }
+}
+@media screen and (min-width: 1679px) {
+  .main-content__div:first-child{
+    padding: 40px 300px 0 300px !important;
+  }
+}
+@media screen and (max-width: 1679px) and (min-width: 1442px) {
+  .main-content__div:first-child {
+    padding: 40px 210px 0px !important;
+  }
+}
+.error-message {
+  color: #F00;
+  font-family: Public Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.085px;
+  padding-left: 20px;
+}
+
+.div-error .header-container__email::placeholder, form#formScheduleDemo.div-error #inputScheduleDemo::placeholder{
+  color: rgba(255, 0, 0, 1);
+}
+
+form.div-error .error-message{
+  padding-left: 30px;
+  margin-top: 10px;
+  grid-column: 1/3;
+  text-align: left;
 
   .main-content__div__simple-ui-ux__easy-to{
     display: grid;
@@ -517,10 +571,14 @@ footer {
     margin-bottom: 40px;
   }
 
-  .item-bottom-right input {
-    left: 87.5px;
+  #formScheduleDemo {
+    display: grid;
+    grid-template-columns: 539px 250px;
+    margin-left: 0;
   }
-
+  #formScheduleDemo .button--primary-pink {
+    margin-top: 0;
+  }
   .button-bottom {
     position: relative;
     right: 85px;
@@ -650,7 +708,7 @@ footer {
 
 @media screen and (max-width: 376px) {
   .who-we-work__section {
-    padding: 40px 24px 0 24px;
+    padding: 0 24px 0 24px;
   }
 
   .main-content__div:first-child {
@@ -765,11 +823,15 @@ footer {
     margin-bottom: 32px;
   }
 
-  .item-bottom-right {
+  #formScheduleDemo {
+    padding-left: 0px;
+    margin-left: 0px;
+    display: flex;
     flex-direction: column;
+    width: 328px
   }
 
-  .item-bottom-right input {
+  #formScheduleDemo #inputScheduleDemo {
     margin-bottom: 16px;
     width: 300px;
     left: 0px;
