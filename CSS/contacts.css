@@ -249,16 +249,6 @@ input, textarea {
     transform: rotate(45deg);
 }
 
-.error-message {
-    color: #F00;
-    font-family: Public Sans;
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.085px;
-    padding-left: 20px;
-}
 
 .email-contact {
     width: 423px;

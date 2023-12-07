@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/pricing.css">
     <script src="./JS/main.js" defer></script>
+    <script src="./JS/validation.js" defer></script>
     <title>PayAPI</title>
 </head>
 
@@ -172,10 +173,11 @@
                     <div class="item-bottom-left">
                         <h2>Ready to start?</h2>
                     </div>
-                    <form class="item-bottom-right">
-                        <input type="email" id="email" placeholder="Enter email address">
-                        <button class="button-text button--primary-pink button-bottom">Schedule a Demo</button>
-                    </form>
+                    <form class="header-container__nav-form" id="formScheduleDemo">
+                        <input type="email" id="inputScheduleDemo" placeholder="Enter email address">
+                        <button class="button-text button--primary-pink button-bottom"  id="buttonScheduleDemo" onclick="scheduleDemoForm(event);">Schedule a Demo</button>
+                    <div id="error" class="error-message"></div>
+                </form>
                 </section>
             </main>
         </div>

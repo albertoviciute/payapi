@@ -124,6 +124,7 @@
 @media screen and (max-width: 768px) {
     .main-content__div {
         text-align: center;
+        padding: 45px 40px 0 39px;
     }
 
     .enterprise-logo__div {
@@ -187,6 +188,7 @@
 
     .main-content{
         background-color: #edf3f8;
+        padding: 40px 24px 0 24px;
     }
     
     .who-we-work {
