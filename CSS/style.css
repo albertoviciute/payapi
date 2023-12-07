@@ -596,6 +596,19 @@ form.div-error .error-message{
     width: 328px
   }
 
+  #formScheduleDemo.div-error .error-message {
+    padding-left: unset;
+    margin-top: 10px;
+    grid-column: unset;
+    margin-left: unset;
+    text-align: center;
+    padding-bottom: 58px;
+  }
+
+  #formScheduleDemo.div-error .button-bottom{
+    margin-bottom: unset;
+  }
+
   #formScheduleDemo #inputScheduleDemo {
     margin-bottom: 16px;
     width: 300px;
