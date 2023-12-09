@@ -1,13 +1,19 @@
-.who-we-work {
+
+.who-we-work__section{
     background: #1B262F;
+}
+
+.who-we-work {
     display: grid;
-    grid-template-columns: 576px 575px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    width: 1112px;
     position: relative;
-    padding: 100px 163px 100px 165px;
-    overflow: hidden;
-    height: 272px;
+    padding: 100px 145px 100px 165px;
+    margin: 0 auto;
+    column-gap: 37px;
+    background-image: url(../IMG/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: -234px -358px;
 }
 
 .who-we-work__heading {
@@ -26,7 +32,6 @@
 
 .who-we-work__info {
     width: 445px;
-    margin-right: 131px;
     z-index: 10;
 }
 
@@ -69,7 +74,8 @@
     background-image: url(/IMG/ENTERPRISES-LOGO/microsoft.svg);
     width: 145px;
     height: 31px;
-    margin-top: -7px;
+    margin-top: -5px;
+    margin-left: 11px;
 }
 
 .span-hewlett {
@@ -77,7 +83,7 @@
     width: 140px;
     height: 27px;
     margin-top: -5px;
-    margin-left: 12px;
+    margin-left: 38px;
 }
 
 .span-oracle {
@@ -90,8 +96,8 @@
     background-image: url(/IMG/ENTERPRISES-LOGO/google.svg);
     width: 96px;
     height: 33px;
-    margin-top: -10px;
-    margin-left: 25px;
+    margin-top: -7px;
+    margin-left: 38px;
 }
 
 .span-nvidia {
@@ -99,7 +105,7 @@
     width: 137px;
     height: 26px;
     margin-top: -5px;
-    margin-left: 15px;
+    margin-left: 40px;
 }
 
 .enterprise-logo__div {
@@ -121,7 +127,17 @@
     opacity: 0.15;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 40.063em) and (max-width: 64em){ 
+
+    .who-we-work {
+        background-image: none;
+    }
+
+    .who-we-work__section {
+        background-image: url(../IMG/bg-pattern-circle.svg);
+        background-repeat: no-repeat;
+        background-position: center -549px;
+    }
     .main-content__div {
         text-align: center;
         padding: 45px 40px 0 39px;
@@ -129,33 +145,37 @@
 
     .enterprise-logo__div {
         grid-row: 1/2;
-        margin-top: 6px;
-        margin-bottom: 38px;
-        grid-template-columns: repeat(3, 176px);
-        margin-left: 9px;
+        grid-template-columns: repeat(3, 1fr);
+        margin: -6px -10px 38px
     }
 
-    .who-we-work__section{
-        max-width: 767px;
+    .who-we-work__section {
         overflow: hidden;
+        display: flex;
+        flex-direction: row;
     }
 
     .who-we-work {
-        grid-template-columns: 554px;
-        min-width: 768px;
+        grid-template-columns: unset;
         text-align: center;
-        left: -58px;
-        height: 425px;
-        padding: 89px 163px 100px 165px;
     }
 
     .who-we-work__info {
-        margin-right: unset;
-        margin: 0 auto;
+        margin: 0 44px 87px;
+    }
+
+    .who-we-work__info p{
+        margin-left: -18px;
+    }
+
+    .who-we-work__info .button--primary-blue {
+        margin-left: -18px;
     }
 
     .who-we-work__heading {
         grid-column: 1/2;
+        margin-bottom: 22px;
+        margin-left: -16px;
     }
 
     .who-we-work__info {
@@ -163,43 +183,54 @@
     }
 
     .span-microsoft {
-        margin-left: 15px;
+        margin-left: 7px;
     }
 
     .span-hewlett {
-        margin-left: 44px;
+        margin-left: 28px;
     }
 
     .span-google {
         margin-top: -9px;
-        margin-left: 40px;
+        margin-left: 30px;
     }
 
     .span-nvidia {
-        margin-left: 47px;
+        margin-left: 30px;
     }
+
     .who-we-bubble {
         left: -115px;
         top: -1075px;
     }
 }
 
-@media screen and (max-width: 376px) {
 
-    .main-content{
+@media only screen and (max-width: 40em) {
+
+    .who-we-work {
+        background-image: none;
+    }
+
+    .who-we-work__section {
+        background-image: url(../IMG/bg-pattern-circle.svg);
+        background-repeat: no-repeat;
+        background-position: center -601px;
+    }
+
+    .main-content {
         background-color: #edf3f8;
     }
-    
-    .main-content__div{
-        padding: 40px 24px 0 24px;
+
+    .main-content__div {
+        padding: 36px 24px 0 24px;
     }
 
     .who-we-work {
-        padding: 80px 24px 80px 24px;
-        grid-template-columns: 327px;
-        left: -25px;
-        height: 509px;
+        padding: 80px 0 80px 0;
+        grid-template-columns: 1fr;
         margin-top: 80px;
+        justify-items: center;
     }
 
     .who-we-work__info {
@@ -211,6 +242,7 @@
         line-height: 36px;
         letter-spacing: -0.246px;
         margin-bottom: 16px;
+        margin-left: -40px;
     }
 
     .who-we-work__info p {
@@ -223,6 +255,8 @@
         margin-bottom: 56px;
         grid-template-columns: repeat(2, 150px);
         margin-left: 27px;
+        grid-row: 1/2;
+
     }
 
     .span-tesla {

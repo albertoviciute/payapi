@@ -7,21 +7,26 @@
   --light-san-juan-blue: rgb(108, 130, 148);
 }
 
-.main-content {
-  position: absolute;
+/* NEW CODE */
+.main-content__div {
+  margin: 0 auto;
 }
 
-.main-content__div:first-child {
-  background-image: url(../IMG/bg-pattern-circle.svg);
-  background-repeat: no-repeat;
-  background-position: 800px -172px;
+/* NEW CODE */
+.main-content__div {
+  padding: 40px 148px 0 165px;
+  /* max-width: 1110px; Perkelti i didesnius ekranus nei 1440px*/
 }
+
 
 .main-content__div {
   background-color: #edf3f8;
-  padding: 40px 165px 0 165px;
-  overflow: hidden;
-  max-width: 1110px;
+}
+
+.header-bubble__home{
+  background-image: url(../IMG/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: 124.5% 389%
 }
 
 .menu-mobile {
@@ -30,6 +35,15 @@
 
 .dropdown {
   display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop-navbar__div {
+  display: flex;
 }
 
 .button-text {
@@ -77,19 +91,10 @@
 
 .container-navbar {
   display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  z-index: 10;
-  position: relative;
-}
-
-.navbar-left {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
-.navbar-left a {
+.container-navbar li a {
   color: rgb(56, 85, 110);
   font-family: Public Sans;
   font-size: 15px;
@@ -99,60 +104,40 @@
   text-decoration: none;
 }
 
-.navbar-left li {
+.container-navbar li {
   padding-left: 40px;
   opacity: 0.7;
 }
 
-.navbar-left li:hover {
+.container-navbar li:hover {
   opacity: 1;
 }
 
-.navbar-left li:first-child {
-  padding: 0;
-  opacity: unset;
+.header-logo {
+  margin-top: 5px;
 }
 
-.navbar-left li:nth-child(2) {
+
+.container-navbar li:first-child {
   padding-left: 64px;
 }
 
-.navbar-left a:hover {
+.container-navbar a:hover {
   color: #36536b;
   opacity: 1;
 }
 
-.navbar-right {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
-}
-
 .container-bottom {
-  height: 56px;
   display: flex;
   justify-content: space-between;
   padding: 96px 0;
+  align-items: center;
 }
 
-
-#formScheduleDemo{
-  display: grid;
-  grid-template-columns: 455px 165px;
-  margin-top: 4px;
-}
-
-#formScheduleDemo #inputScheduleDemo {
-  padding: 0;
-  background: #fbfcfe;
-  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-  border: none;
-  border-radius: 24px;
-  width: 418px;
-  height: 48px;
-  position: relative;
-  left: 173px;
-  padding-left: 27px;
+.header-container__nav-form {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 445px;
 }
 
 #formScheduleDemo #inputScheduleDemo::placeholder {
@@ -166,23 +151,11 @@
   padding: 16px 276px 14px 0px;
 }
 
-#formScheduleDemo #inputScheduleDemo {
-  color: #36536b;
-  font-family: Public Sans;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+#formScheduleDemoTop .button--primary-pink {
+  z-index: 9;
+  margin-left: -170px;
 }
 
-#formScheduleDemo #inputScheduleDemo {
-  color: #36536b;
-  font-family: Public Sans;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
 
 #formScheduleDemo.div-error .error-message {
   padding-left: 30px;
@@ -194,6 +167,8 @@
 
 .button-bottom {
   z-index: 2;
+  position: absolute;
+
 }
 
 .container-bottom h2 {
@@ -205,6 +180,22 @@
   line-height: 56px;
   letter-spacing: -0.369px;
   white-space: nowrap;
+}
+
+input.header-container__email {
+  width: 425px;
+  height: 48px;
+  background-color: rgb(251, 252, 254);
+  color: #36536b;
+  font-family: Public Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 25px;
+  border: 0px solid #FBFCFE;
+  padding: 0px 0px 0px 28px;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
 }
 
 footer {
@@ -222,7 +213,7 @@ footer {
   z-index: 20;
   position: relative;
   height: 100px;
-  padding: 0 165px;
+  padding: 0 148px 0 165px;
 }
 
 .footer--left,
@@ -325,30 +316,86 @@ footer {
 
 
 #formScheduleDemo #inputScheduleDemo:-webkit-autofill,
-#formScheduleDemo #inputScheduleDemo:-webkit-autofill:hover, 
-#formScheduleDemo #inputScheduleDemo:-webkit-autofill:focus, 
+#formScheduleDemo #inputScheduleDemo:-webkit-autofill:hover,
+#formScheduleDemo #inputScheduleDemo:-webkit-autofill:focus,
 #formScheduleDemo #inputScheduleDemo:-webkit-autofill:active,
 #formScheduleDemoTop #inputScheduleDemoTop:-webkit-autofill,
-#formScheduleDemoTop #inputScheduleDemoTop:-webkit-autofill:hover, 
-#formScheduleDemoTop #inputScheduleDemoTop:-webkit-autofill:focus, 
-#formScheduleDemoTop #inputScheduleDemoTop:-webkit-autofill:active{
+#formScheduleDemoTop #inputScheduleDemoTop:-webkit-autofill:hover,
+#formScheduleDemoTop #inputScheduleDemoTop:-webkit-autofill:focus,
+#formScheduleDemoTop #inputScheduleDemoTop:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px #fbfcfe inset, 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
   -webkit-text-fill-color: #36536b;
 }
 
 
+
+
+/* 3 columns css - Personal Finances, Banking & Coverage, Consumer Payments */
+
+.container-review {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: auto;
+  font-family: "Public Sans";
+  padding-top: 43px;
+  gap: 30px;
+}
+
+.container-column__finances {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-column__banking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-column__consumer-payments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-review img {
+  width: 106px;
+  height: 106px;
+}
+
+.container-review h3 {
+  max-width: 350px;
+  height: 25px;
+  color: #36536B;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.138px;
+  margin: 32px 0 16px 0;
+}
+
+.container-review p {
+  max-width: 350px;
+  color: #6C8294;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.115px;
+}
+
+.container-column__finances-photo {
+  margin-right: 15px;
+}
+
 @media screen and (min-width: 1441px) {
-  .main-content__div,
-  .main-content {
-    margin: 0 auto;
-  }
-
-  .main-content__div:first-child{
-    padding: 40px 200px 0 200px !important;
-  }
 
   .main-content {
-    position: unset;
     background-color: #edf3f8;
   }
 
@@ -361,7 +408,7 @@ footer {
     justify-content: center;
   }
 
-  footer > div {
+  footer>div {
     width: 1440px;
     overflow: unset !important;
   }
@@ -370,56 +417,27 @@ footer {
     display: flex;
     justify-content: center;
     background: #1b262f;
-    overflow: hidden;
   }
 
   .who-we-work {
-     overflow: unset !important;
+    overflow: unset !important;
   }
 }
-@media screen and (min-width: 1679px) {
-  .main-content__div:first-child{
-    padding: 40px 300px 0 300px !important;
-  }
-}
-@media screen and (max-width: 1679px) and (min-width: 1442px) {
-  .main-content__div:first-child {
-    padding: 40px 210px 0px !important;
-  }
-}
-.error-message {
-  color: #F00;
-  font-family: Public Sans;
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.085px;
-  padding-left: 20px;
-}
 
-.div-error .header-container__email::placeholder, form#formScheduleDemo.div-error #inputScheduleDemo::placeholder{
-  color: rgba(255, 0, 0, 1);
-}
 
-form.div-error .error-message{
-  padding-left: 30px;
-  margin-top: 10px;
-  grid-column: 1/3;
-  text-align: left;
-}
 
-@media screen and (max-width: 768px) and (min-width: 376px) {
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .main-content__div {
-    max-width: 689px;
     padding: 0 40px 0 39px;
   }
 
-  .main-content__div:first-child {
-    padding: 45px 40px 0 39px;
-    background-position: -91px -663px;
+  .main-content__div {
+    padding: 40px 22px 0 39px;
+  }
+
+  .header-bubble__home {
+    background-position: center -663px;
     background-size: 949px;
-    max-width: 689px;
   }
 
   .menu-mobile {
@@ -428,10 +446,6 @@ form.div-error .error-message{
 
   .dropdown {
     display: none;
-  }
-
-  footer {
-    max-width: 768px;
   }
 
   .footer {
@@ -450,50 +464,76 @@ form.div-error .error-message{
   .container-bottom {
     flex-direction: column;
     align-items: center;
-    padding: 100px 0 187px 0;
+    padding: 100px 0;
+    margin-left: -16px;
   }
 
   .container-bottom h2 {
     margin-bottom: 40px;
   }
 
-  #formScheduleDemo {
-    display: grid;
-    grid-template-columns: 539px 250px;
-    margin-left: 0;
-  }
   #formScheduleDemo .button--primary-pink {
     margin-top: 0;
   }
-  .button-bottom {
-    position: relative;
-    right: 85px;
+
+  .container-review img {
+    width: 88px;
+    height: 88px;
+  }
+
+  .container-review {
+    padding-top: 100px;
+    gap: 30px;
+    max-width: 680px;
+  }
+
+  .container-column__finances-photo {
+    margin-right: 8px;
+  }
+
+  .container-column__banking-logo,
+  .container-column__consumer-payments-logo {
+    margin-left: -20px;
+  }
+
+  .container-review h3 {
+    margin-right: 24px;
+  }
+
+  .container-review p {
+    margin-left: -15px;
+  }
+
+  .container-review p:last-child {
+    margin-left: -19px;
   }
 }
 
-@media screen and (max-width: 376px) {
+
+@media only screen and (max-width: 40em) {
+
+  * {
+    text-align: center;
+  }
+
+  #formScheduleDemoTop .button--primary-pink {
+    margin-left: unset;
+  }
+
   .who-we-work__section {
     padding: 0 24px 0 24px;
   }
 
   .main-content__div:first-child {
-    padding: 40px 24px 0 24px;
     background-position: -202px -550px;
   }
 
   .main-content {
     position: unset;
+    overflow: hidden;
   }
 
-  .navbar-left li:nth-child(2) {
-    display: none;
-  }
-
-  .navbar-left li:nth-child(3) {
-    display: none;
-  }
-
-  .navbar-left li:nth-child(4) {
+  .container-navbar {
     display: none;
   }
 
@@ -577,8 +617,7 @@ form.div-error .error-message{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: unset;
-    padding: unset;
+    padding: 79px 0;
   }
 
   .container-bottom h2 {
@@ -604,7 +643,7 @@ form.div-error .error-message{
 
   .button-bottom {
     width: 327px;
-    margin-bottom: 80px;
+    position: unset;
   }
 
   footer {
@@ -650,143 +689,25 @@ form.div-error .error-message{
     left: 202px;
     top: -177px;
   }
-}
 
-/* 3 columns css - Personal Finances, Banking & Coverage, Consumer Payments */
-
-.container-review {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin: auto;
-  font-family: "Public Sans";
-  padding: 146.57px 0 0 0;
-}
-
-.container-column__finances {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 30px;
-}
-
-.container-column__banking {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 30px;
-}
-
-.container-column__consumer-payments {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container-review img {
-  width: 106px;
-  height: 106px;
-}
-
-.container-review h3 {
-  width: 350px;
-  height: 25px;
-  color: #36536B;
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 25px;
-  letter-spacing: -0.138px;
-  margin: 32px 0 16px 0;
-}
-
-.container-review p {
-  width: 350px;
-  color: #6C8294;
-  text-align: center;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: -0.115px;
-}
-
-.container-column__finances-photo{
-  margin-right: 15px;
-}
-
-@media screen and (max-width: 768px) and (min-width: 376px) {
-  
-  .container-review {
-    padding: 100px 0 0 0;
-    width: 768px;
-  }
-  
-  
-  .container-column__finances {
-    margin-right: 10px;
-  }
-  
-  .container-column__banking {
-    margin-right: 10px;
-  }
-
-  .container-review img {
-    width: 88px;
-    height: 88px;
-  }
-
-  .container-review h3 {
-    width: 223px;
-    margin: 32px 0 16px 0;
-  }
-
-  .container-review p {
-    width: 223px;
-  }
-
-  .container-column__finances-photo{
+  .container-column__bankings .container-column__finances {
     margin-right: unset;
   }
-}
 
-@media screen and (max-width: 376px) {
-
-  .container-review {
-    flex-direction: column;
-    padding: 80px 0 80px 0;
-  }  
-
-  .container-column__finances {
-    margin-right: unset;
-    margin-bottom: 48px;
+  .button-navbar {
+    display: none;
   }
 
-  .container-column__banking {
-    margin-right: unset;
-    margin-bottom: 48px;
+  .container-column__finances-photo {
+    margin-right: 0;
   }
 
-  .container-review img {
-    width: 106px;
-    height: 106px;
+  .container-review h3{
+    margin-right: -2px;
   }
 
-  .container-review h3 {
-    width: 328px;
-    margin: 33px 0 16px 0;
+  .container-column__banking-logo, .container-column__consumer-payments-logo {
+    margin-left: 0;
   }
 
-  .container-review p {
-    width: 328px;
-  }
-
-  .main-content__div:has(.container-review){
-    padding: 40px 24px 0 24px;
-  }
-
-  .container-column__finances-photo{
-    margin-right: unset;
-  }
 }

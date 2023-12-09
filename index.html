@@ -16,57 +16,56 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/who-we-work.css">
     <link rel="stylesheet" href="./CSS/style_home.css">
+    <link rel="stylesheet" href="./CSS/gray-part.css">
     <script src="./JS/main.js" defer></script>
     <script src="./JS/validation.js" defer></script>
     <title>PayAPI</title>
 </head>
 
-<body> 
+<body>
     <div class="main-content">
-        <div class="main-content__div">
+        <div class="main-content__div header-bubble__home">
             <header>
-                <nav class="container-navbar">
-                    <ul class="navbar-left">
-                        <li><a href="index.html"><img src="IMG/payapi-logo.svg" alt="logo"></a></li>
+                <nav class="desktop-navbar__div">
+                    <a href="index.html"><img src="IMG/payapi-logo.svg" alt="logo" class="header-logo"></a>
+                    <ul class="container-navbar">
                         <li><a href="pricing.html">Pricing</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contacts.html">Contact</a></li>
                     </ul>
-                    <div class="dropdown">
-                        <img src="IMG/Group.svg" alt="menu" class="menu-mobile" onclick="showMobileMenu();">
-                        <div class="dropdown-content" id="dropdownContent">
-                            <ul>
-                                <li><img src="IMG/mobile-close-icon.svg" alt="close" onclick="hideMenu();"></li>
-                                <li><img src="IMG/Rectangle.png" alt="line"></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contacts.html">Contact</a></li>
-                                <li><button class="button-text button--primary-pink button-mobile-menu">Schedule a Demo</button></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="navbar-right">
-                        <button class="button-text button--primary-pink button-navbar">Schedule a Demo</button>
-                    </div>
                 </nav>
+                <button class="button-text button--primary-pink button-navbar  navbar-right">Schedule a Demo</button>
+                <div class="dropdown">
+                    <img src="IMG/Group.svg" alt="menu" class="menu-mobile" onclick="showMobileMenu();">
+                    <div class="dropdown-content" id="dropdownContent">
+                        <ul>
+                            <li><img src="IMG/mobile-close-icon.svg" alt="close" onclick="hideMenu();"></li>
+                            <li><img src="IMG/Rectangle.png" alt="line"></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contacts.html">Contact</a></li>
+                            <li><button class="button-text button--primary-pink button-mobile-menu">Schedule a Demo</button></li>
+                        </ul>
+                    </div>
+                </div>
             </header>
             <main>
-                <section>
-                    <div class="header-container">
-                        <div class="header-container__phone-img-grid">
-                            <img class="header-container__phone-img" src="./IMG/home-phone.svg" alt="phone-mockup">
-                        </div>
-                        <div class="header-container__grid-in-columns">
-                            <h1>Start building with our APIs for absolutely free. </h1>
-                            <form class="header-container__nav-form" id="formScheduleDemoTop">
-                                <input class="header-container__email" type="email" id="inputScheduleDemoTop" placeholder="Enter email address" maxlength="255">
-                                <button class="button-text button--primary-pink" id="buttonScheduleDemoTop" onclick="scheduleDemoFormTop(event);">Schedule a Demo</button>
-                                <div id="errorTop" class="error-message"></div>
-                            </form>
-                            <div class="header-container__have-any-questions">
-                                <span class="header-container__have-any-questions-span">Have any questions?</span>
-                                <a href="contacts.html"><span class="header-container__contact-us">Contact Us</span></a>
-                            </div>
+                <section class="header-container">
+                    <div class="header-container__phone-img-grid">
+                        <img class="header-container__phone-img" src="./IMG/home-phone.svg" alt="phone-mockup">
+                    </div>
+                    <div class="header-container__grid-in-columns">
+                        <h1>Start building with our APIs for absolutely free. </h1>
+                        <form class="header-container__nav-form" id="formScheduleDemoTop">
+                            <input class="header-container__email" type="email" id="inputScheduleDemoTop"
+                                placeholder="Enter email address" maxlength="255">
+                            <button class="button-text button--primary-pink" id="buttonScheduleDemoTop"
+                                onclick="scheduleDemoFormTop(event);">Schedule a Demo</button>
+                            <div id="errorTop" class="error-message"></div>
+                        </form>
+                        <div class="header-container__have-any-questions">
+                            <span class="header-container__have-any-questions-span">Have any questions?</span>
+                            <a href="contacts.html"><span class="header-container__contact-us">Contact Us</span></a>
                         </div>
                     </div>
                 </section>
@@ -75,37 +74,43 @@
         <section class="who-we-work__section">
             <div class="who-we-work">
                 <h3 class="who-we-work__heading">Who we work with</h3>
-                <div class="who-we-work__info">
-                    <p>Today, millions of people around the world have successfully connected their accounts to
-                        apps they love using our API. We provide developers with the tools they need to create
-                        easy and accessible experiences for their users.</p>
-                    <button class="button-text button--primary-blue" onclick="redirectToAboutPage();">About Us</button>
-                </div>
-                <div class="enterprise-logo__div">
-                    <span class="span-tesla"></span>
-                    <span class="span-microsoft"></span>
-                    <span class="span-hewlett"></span>
-                    <span class="span-oracle"></span>
-                    <span class="span-google"></span>
-                    <span class="span-nvidia"></span>
-                </div>
-                <div class="who-we-bubble"></div>
+                    <div class="who-we-work__info">
+                        <p>Today, millions of people around the world have successfully connected their accounts to
+                            apps they love using our API. We provide developers with the tools they need to create
+                            easy and accessible experiences for their users.</p>
+                        <button class="button-text button--primary-blue" onclick="redirectToAboutPage();">About Us</button>
+                    </div>
+                    <div class="enterprise-logo__div">
+                        <span class="span-tesla"></span>
+                        <span class="span-microsoft"></span>
+                        <span class="span-hewlett"></span>
+                        <span class="span-oracle"></span>
+                        <span class="span-google"></span>
+                        <span class="span-nvidia"></span>
+                    </div>
             </div>
         </section>
-        <div class="main-content__div">
-            <main>
+        <div class="main-content__div gray-bubble">
+            <main >
                 <!-- All gray -->
-                <section>
-                    <!-- Easy to emplement -->
-                    <section>
-                        <!-- code -->
+                <section class="main-content__div__simple-ui-ux">
+                    <section class="main-content__div__simple-ui-ux__easy-to">
+                        <img src="/IMG/illustration-easy-to-implement.svg" alt="code example ui-ux">
+                        <div class="main-content__div__simple-ui-ux__easy-to__inline">
+                            <h2>Easy to implement</h2>
+                            <p>Our API comes with just a few lines of code. You’ll be up and running in no time. We built our documentation page to handle payments functionality with ease.</p>
+                        </div>
                     </section>
-                    <!-- Simple UI UX -->
-                    <section>
-                        <!-- code -->
+                    <section class="main-content__div__simple">
+                        <div class="main-content__div__simple__inline"> 
+                            <h2>Simple UI & UX</h2>
+                            <p>Our pre-built form is easy to integrate in your app or website’s checkout flow and designed to optimize conversion.</p>
+                        </div> 
+                        <div class="main-content__div__simple__buble-phone">
+                            <img src="/IMG/illustration-simple-ui.svg" alt="ui-ux-design">
+                        </div>
                     </section>
-                    <!-- 3 columns with 3 logo -->
-                    <div class="container-review">
+                <section class="container-review">
                         <div class="container-column__finances">
                             <img src="IMG/finances-logo.svg" alt="finances logo" class="container-column__finances-photo">
                             <h3>Personal Finances</h3>
@@ -123,15 +128,14 @@
                             <h3>Consumer Payments</h3>
                             <p>It’s easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers could instantly authenticate their account.</p>
                         </div>
-                    </div>
                 </section>
                 <section class="container-bottom">
-                    <div class="item-bottom-left">
-                        <h2>Ready to start?</h2>
-                    </div>
+                    <h2>Ready to start?</h2>
                     <form class="header-container__nav-form" id="formScheduleDemo">
-                            <input type="email" id="inputScheduleDemo" placeholder="Enter email address" maxlength="255">
-                            <button class="button-text button--primary-pink button-bottom"  id="buttonScheduleDemo" onclick="scheduleDemoForm(event);">Schedule a Demo</button>
+                        <input type="email" class="header-container__email" id="inputScheduleDemo"
+                            placeholder="Enter email address" maxlength="255">
+                        <button class="button-text button--primary-pink button-bottom" id="buttonScheduleDemo"
+                            onclick="scheduleDemoForm(event);">Schedule a Demo</button>
                         <div id="error" class="error-message"></div>
                     </form>
                 </section>

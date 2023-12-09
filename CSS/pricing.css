@@ -4,7 +4,7 @@
   --san-juan-blue: rgb(54, 83, 107);
 }
 
-.main-content__div:first-child  {
+.main-content__div:first-child {
   background-color: #edf3f8;
   background-image: url(../IMG/bg-pattern-circle.svg);
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
-  margin-bottom: 8px;
+  min-height: 84px;
 }
 
 .pricing-plan__price {
@@ -56,9 +56,9 @@
 }
 
 .pricing-main {
-  display: grid;
-  grid-template-columns: repeat(3, 350px);
-  grid-column-gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .list-main {
@@ -111,7 +111,7 @@
   height: 8px;
 }
 
-@media screen and (max-width: 768px) and (min-width: 376px) {
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .main-content__div:first-child {
     padding: 40px 40px 0 39px;
     background-position: 505px -464px;
@@ -139,7 +139,7 @@
   }
 
   .pricing-plan__description {
-    margin-bottom: 19px;
+    min-height: 111px;
   }
 
   .pricing-plan__price {
@@ -160,12 +160,13 @@
   .pricing-main .button--primary-blue {
     margin-top: 26px;
   }
+
   .pricing-main__container .container-bottom {
     padding: 100px 0 189px 0;
   }
 }
 
-@media screen and (max-width: 376px) {
+@media only screen and (max-width: 40em) {
   .main-content__div:first-child {
     padding: 40px 24px 0 24px;
     background-position: 74px -644px;
@@ -176,10 +177,12 @@
   }
 
   .pricing-main {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .pricing-main > section {
+  .pricing-main>section {
     width: 327px;
   }
 
@@ -224,5 +227,4 @@
     margin-bottom: 80px;
   }
 
-  
 }
