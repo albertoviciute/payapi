@@ -76,13 +76,6 @@ input.header-container__email::placeholder {
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
     /* ALL NEW CODE */
-    .main-content__div {
-        padding: 40px 23px 0 40px;
-    }
-
-    .who-we-work {
-        padding: 100px 9px 0 40px;
-    }
 
     .header-container__grid-in-columns h1 {
         font-size: 48px;

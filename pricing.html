@@ -23,6 +23,7 @@
 <body>
     <div class="main-content">
         <div class="main-content__div main-bubble">
+            <div class="main-bubble__large"></div>
             <header>
                 <nav class="desktop-navbar__div">
                     <a href="index.html"><img src="IMG/payapi-logo.svg" alt="logo" class="header-logo"></a>
@@ -162,18 +163,19 @@
                                     <span>Income</span>
                                 </div>
                             </div>
-    
                         </section>
                         <button class="button-text button--primary-blue button-mobile">Request Access</button>
                     </section>
                 </section>
                 <section class="container-bottom">
                     <h2>Ready to start?</h2>
-                    <form class="header-container__nav-form" id="formScheduleDemo">
-                        <input type="email" class="header-container__email" id="inputScheduleDemo"
-                            placeholder="Enter email address" maxlength="255">
-                        <button class="button-text button--primary-pink button-bottom" id="buttonScheduleDemo"
-                            onclick="scheduleDemoForm(event);">Schedule a Demo</button>
+                    <form id="formScheduleDemo">
+                        <div class="header-container__nav-form">
+                            <input type="email" class="header-container__email" id="inputScheduleDemo"
+                                placeholder="Enter email address" maxlength="255">
+                            <button class="button-text button--primary-pink button-bottom" id="buttonScheduleDemo"
+                                onclick="scheduleDemoForm(event);">Schedule a Demo</button>
+                        </div>
                         <div id="error" class="error-message"></div>
                     </form>
                 </section>
@@ -193,7 +195,6 @@
                             <li><a href="contacts.html">Contact</a></li>
                         </ul>
                     </div>
-
                     <ul class="footer--right">
                         <li><a href="https://www.facebook.com/"><span class="footer-facebook__link"></span></a></li>
                         <li><a href="https://twitter.com/?lang=en"><span class="footer-twitter__link"></span></a></li>

@@ -52,6 +52,10 @@
   gap: 30px;
 }
 
+.pricing__inner-main {
+  max-width: 350px;
+}
+
 .list-main {
   border-top: 1px solid rgba(54, 83, 107, 0.25);
   border-bottom: 1px solid rgba(54, 83, 107, 0.25);
@@ -103,9 +107,6 @@
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .main-content__div:first-child {
-    padding: 40px 40px 0 39px;
-  }
 
   .pricing-main__container {
     text-align: center;
@@ -150,9 +151,10 @@
     margin-top: 26px;
   }
 
-  .pricing-main__container .container-bottom {
-    padding: 100px 0 189px 0;
+  .container-bottom {
+    margin-left: 0px;
   }
+
 }
 
 @media only screen and (max-width: 40em) {
