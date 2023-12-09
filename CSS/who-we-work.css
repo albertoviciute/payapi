@@ -115,22 +115,13 @@
     margin-top: 11px;
 }
 
-.who-we-bubble {
-    width: 780px;
-    height: 780px;
-    border-radius: 780px;
-    background: #36536B;
-    position: relative;
-    z-index: 3;
-    left: -400px;
-    top: -730px;
-    opacity: 0.15;
-}
+
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em){ 
 
     .who-we-work {
         background-image: none;
+        padding: 100px 22px 0 40px;
     }
 
     .who-we-work__section {
@@ -140,7 +131,6 @@
     }
     .main-content__div {
         text-align: center;
-        padding: 45px 40px 0 39px;
     }
 
     .enterprise-logo__div {

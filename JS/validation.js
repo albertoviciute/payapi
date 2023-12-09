@@ -9,7 +9,7 @@ const contactCheck = document.getElementById('checkbox');
 const formValues = [contactName, contactEmail, company, title, message];
 
 
-function contactFormSubmit(e){
+function contactFormSubmit(e) {
     e.preventDefault();
     const isValid = validateForm(formValues);
 
@@ -37,7 +37,7 @@ function contactFormSubmit(e){
         //     .catch(error => {
         //         console.error('An error occurred during form submission:', error);
         //     });
-        }
+    }
     contactForm.reset();
     resetInputBorder();
     formValues.forEach(element => {
@@ -52,7 +52,7 @@ function sanitizeValues(formValues) {
         const trimmedValue = element.value.trim();
         let sanitizedValue;
         if (/[<>&$%^#]/.test(trimmedValue)) {
-            sanitizedValue = trimmedValue.replace(/[<>&$%^#]/g, function(match) {
+            sanitizedValue = trimmedValue.replace(/[<>&$%^#]/g, function (match) {
                 switch (match) {
                     case '<':
                         return '&#x3C;';
@@ -73,7 +73,7 @@ function sanitizeValues(formValues) {
             sanitizedFormValues[element.name] = sanitizedValue;
         } else {
             sanitizedFormValues[element.name] = trimmedValue;
-        }        
+        }
     });
 
     sanitizedFormValues['news-checkbox'] = contactCheck.checked;
@@ -92,12 +92,12 @@ function resetInputBorder(element, mode) {
 }
 
 function setErrorMessage(element, message) {
-    const inputParent = element.parentElement;
+    const inputParent = element.parentElement.parentElement;
     let errorSpan;
 
     if (inputParent.id.includes('formScheduleDemoTop')) {
         errorSpan = document.getElementById('errorTop');
-    } else if(inputParent.id.includes('contactDiv')){
+    } else if (inputParent.id.includes('contactForm')) {
         errorSpan = document.getElementById('contacterror');
     } else {
         errorSpan = document.getElementById('error');
@@ -109,12 +109,12 @@ function setErrorMessage(element, message) {
 
 
 function removeErrorMessage(element) {
-    const inputParent = element.parentElement;
+    const inputParent = element.parentElement.parentElement;
     let errorSpan;
 
     if (inputParent.id.includes('formScheduleDemoTop')) {
         errorSpan = document.getElementById('errorTop');
-    } else if(inputParent.id.includes('contactDiv')){
+    } else if (inputParent.id.includes('contactDiv')) {
         errorSpan = document.getElementById('contacterror');
     } else {
         errorSpan = document.getElementById('error');
@@ -147,7 +147,7 @@ function validEmailInput(email) {
         setErrorMessage(email, "The email address provided cannot contain spaces");
     } else if (!trimedEmail.includes('.')) {
         setErrorMessage(email, "The email address provided must contain a dot");
-    }  else if (trimedEmail.endsWith('.')) {
+    } else if (trimedEmail.endsWith('.')) {
         setErrorMessage(email, "The email address provided cannot end with a dot");
     } else if (trimedEmail.startsWith('@') || trimedEmail.startsWith('.')) {
         setErrorMessage(email, "The email address provided must start with a username before '@' symbol");
@@ -157,9 +157,8 @@ function validEmailInput(email) {
         setErrorMessage(email, "Too many dots, only two dots are allowed in the email address");
     } else if (atSignCount > 1) {
         setErrorMessage(email, "Too many '@' symbol, only one sign is allowed in the email address");
-        // }  else if (trimedEmail.indexOf('.') > 0 && trimedEmail.indexOf('.') > trimedEmail.indexOf('@')){
-        // Bullshit
-        //setErrorMessage(email, "There could be only one dot at the beginning of the '@' symbol");
+    } else if ((trimedEmail.split('.')[1].length) < 2) {
+        setErrorMessage(email, "Top-level domains must have at least two characters");
     } else if ((trimedEmail.charAt(lastDotIndex - 1)) === '.') {
         setErrorMessage(email, "Multiple dots in the domain portion is invalid");
     } else {
@@ -180,19 +179,19 @@ function validateFormSchedule(element) {
     return validEmailInput(element);
 }
 
-function scheduleDemoFormTop(e){
+function scheduleDemoFormTop(e) {
     e.preventDefault();
     const isValid = validateFormSchedule(scheduleInputTop);
-    if(isValid){
+    if (isValid) {
         console.log(scheduleInputTop.value)
     }
     scheduleFormTop.reset();
 }
 
-function scheduleDemoForm(e){
+function scheduleDemoForm(e) {
     e.preventDefault();
     const isValid = validateFormSchedule(scheduleInput);
-    if(isValid){
+    if (isValid) {
         console.log(scheduleInput.value)
     }
     scheduleForm.reset();
@@ -203,14 +202,14 @@ const pathname = window.location.pathname;
 const filename = pathname.split('/').pop();
 
 
-if (filename.includes('contacts')){
+if (filename.includes('contacts')) {
     contactName.addEventListener('input', function () {
         this.value = this.value.replace(/[^\p{L}\s]/gu, '');
     });
     title.addEventListener('input', function () {
         this.value = this.value.replace(/[^\p{L}\s\d]/gu, '');
     });
-    
+
     formValues.forEach(element => {
         element.onblur = () => resetInputBorder(element, 2);
         element.onfocus = () => element.classList.add('border-bottom--dark');

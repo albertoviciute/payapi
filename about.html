@@ -14,7 +14,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/pricing.css">
     <link rel="stylesheet" href="./CSS/about.css">
     <script src="./JS/main.js" defer></script>
     <script src="./JS/validation.js" defer></script>
@@ -23,7 +22,8 @@
 
 <body>
     <div class="main-content">
-        <div class="main-content__div">
+        <div class="main-content__div main-bubble">
+            <div class="main-bubble__large"></div>
             <header>
                 <nav class="desktop-navbar__div">
                     <a href="index.html"><img src="IMG/payapi-logo.svg" alt="logo" class="header-logo"></a>
@@ -43,16 +43,14 @@
                             <li><a href="pricing.html">Pricing</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contacts.html">Contact</a></li>
-                            <li><button class="button-text button--primary-pink button-mobile-menu">Schedule a Demo</button></li>
+                            <li><button class="button-text button--primary-pink button-mobile-menu">Schedule a
+                                    Demo</button></li>
                         </ul>
                     </div>
                 </div>
             </header>
             <main class="about-main__container">
-                <!-- Title -->
                 <h2 class="about-main-title">We empower innovators by delivering access to the financial system</h2>
-
-                <!-- Our vision, Our Business -->
                 <div class="about-our__main">
                     <div class="about-our-inner">
                         <h3>Our Vision</h3>
@@ -61,26 +59,19 @@
                             amazing products that solve big problems. We are deeply focused on democratizing financial
                             services through technology. </p>
                     </div>
-
                     <div class="about-our-inner">
                         <h3>Our Business</h3>
                         <p>At the core of our platform is the technical infrastructure APIs that connect consumers. Our
                             innovative product provides key insights for businesses and individuals, as well as robust
                             reporting for traditional financial institutions and developers. </p>
                     </div>
-
                 </div>
             </main>
         </div>
-            <div class="about-photo__container"></div>
-        <div class="main-content__div">
+        <div class="about-photo__container"></div>
+        <div class="main-content__div about--bottom">
             <main class="about-main__container">
-                
-
                 <div class="about-bubble"></div>
-                
-                <!-- Info STATISTICS about Team Members, Offices, Transactions -->
-
                 <div class="about-statistics">
                     <div class="about-statistics__inner">
                         <h4 class="about-statistics--team-members">Team Members</h4>
@@ -97,36 +88,30 @@
                         <h3>10M+</h3>
                     </div>
                 </div>
-
-                <!-- The Culture, The People -->
-
                 <div class="about-our__main about-our__main-bottom">
                     <div class="about-our-inner">
                         <h3>The Culture</h3>
-                        <p>We strongly believe there's always an opportunity to learn from each other outside of day-to-day
+                        <p>We strongly believe there's always an opportunity to learn from each other outside of
+                            day-to-day
                             work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. We
-                            always
-                            value
-                            cross-team collaboration and diversity of thought, no matter the job title.</p>
+                            always value cross-team collaboration and diversity of thought, no matter the job title.</p>
                     </div>
-
                     <div class="about-our-inner">
                         <h3>The People</h3>
                         <p>We're all passionate about building a more efficient and inclusive financial infrastructure
-                            together.
-                            At PayAPI, we have diverse backgrounds and skills.</p>
+                            together. At PayAPI, we have diverse backgrounds and skills.</p>
                     </div>
                 </div>
-
-                <!-- Main page end - Ready to start? -->
                 </section>
                 <section class="container-bottom">
                     <h2>Ready to start?</h2>
-                    <form class="header-container__nav-form" id="formScheduleDemo">
-                        <input type="email" class="header-container__email" id="inputScheduleDemo"
-                            placeholder="Enter email address" maxlength="255">
-                        <button class="button-text button--primary-pink button-bottom" id="buttonScheduleDemo"
-                            onclick="scheduleDemoForm(event);">Schedule a Demo</button>
+                    <form id="formScheduleDemo">
+                        <div class="header-container__nav-form">
+                            <input type="email" class="header-container__email" id="inputScheduleDemo"
+                                placeholder="Enter email address" maxlength="255">
+                            <button class="button-text button--primary-pink button-bottom" id="buttonScheduleDemo"
+                                onclick="scheduleDemoForm(event);">Schedule a Demo</button>
+                        </div>
                         <div id="error" class="error-message"></div>
                     </form>
                 </section>
@@ -146,7 +131,6 @@
                             <li><a href="contacts.html">Contact</a></li>
                         </ul>
                     </div>
-
                     <ul class="footer--right">
                         <li><a href="https://www.facebook.com/"><span class="footer-facebook__link"></span></a></li>
                         <li><a href="https://twitter.com/?lang=en"><span class="footer-twitter__link"></span></a></li>
