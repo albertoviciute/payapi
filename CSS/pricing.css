@@ -4,15 +4,6 @@
   --san-juan-blue: rgb(54, 83, 107);
 }
 
-.main-content__div:first-child {
-  background-color: #edf3f8;
-  background-image: url(../IMG/bg-pattern-circle.svg);
-  background-repeat: no-repeat;
-  background-position: 800px -527px;
-  padding: 40px 165px 0 165px;
-  overflow: hidden;
-}
-
 .pricing-heading {
   color: var(--san-juan-blue);
   font-family: DM Serif Display;
@@ -114,8 +105,6 @@
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .main-content__div:first-child {
     padding: 40px 40px 0 39px;
-    background-position: 505px -464px;
-    background-size: 780px;
   }
 
   .pricing-main__container {
@@ -167,10 +156,6 @@
 }
 
 @media only screen and (max-width: 40em) {
-  .main-content__div:first-child {
-    padding: 40px 24px 0 24px;
-    background-position: 74px -644px;
-  }
 
   .pricing-main__container {
     text-align: center;

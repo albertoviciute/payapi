@@ -26,7 +26,13 @@
 .header-bubble__home{
   background-image: url(../IMG/bg-pattern-circle.svg);
   background-repeat: no-repeat;
-  background-position: 124.5% 389%
+  background-position: 124.5% 389%;
+}
+
+.main-bubble{
+  background-image: url(../IMG/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: 124.5% -144%;
 }
 
 .menu-mobile {
@@ -393,10 +399,14 @@ footer {
   margin-right: 15px;
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 90.063em){
 
-  .main-content {
+  .main-content { 
     background-color: #edf3f8;
+  }
+  
+  .main-content__div, .who-we-work{
+    max-width: 1110px;
   }
 
   .dropdown {
@@ -440,6 +450,11 @@ footer {
     background-size: 949px;
   }
 
+  .main-bubble{
+    background-position: 501px -83%;
+    background-size: 780px;
+  }
+  
   .menu-mobile {
     display: none;
   }
@@ -516,16 +531,24 @@ footer {
     text-align: center;
   }
 
+  .main-content__div {
+    padding: 36px 24px 0 24px;
+  }
+
+  .header-bubble__home{
+    background-position: -202px -550px;
+  }
+
+  .main-bubble{
+    background-position: 74px -644px;
+  }
+
   #formScheduleDemoTop .button--primary-pink {
     margin-left: unset;
   }
 
   .who-we-work__section {
     padding: 0 24px 0 24px;
-  }
-
-  .main-content__div:first-child {
-    background-position: -202px -550px;
   }
 
   .main-content {
