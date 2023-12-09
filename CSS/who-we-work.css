@@ -218,14 +218,6 @@
         background-position: center -601px;
     }
 
-    .main-content {
-        background-color: #edf3f8;
-    }
-
-    .main-content__div {
-        padding: 36px 24px 0 24px;
-    }
-
     .who-we-work {
         padding: 80px 0 80px 0;
         grid-template-columns: 1fr;
