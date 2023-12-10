@@ -103,6 +103,7 @@ function setErrorMessage(element, message) {
         errorSpan = document.getElementById('error');
     }
 
+    errorSpan.classList.add('visible');
     errorSpan.innerText = message;
     inputParent.classList.add('div-error');
 }
@@ -119,6 +120,8 @@ function removeErrorMessage(element) {
     } else {
         errorSpan = document.getElementById('error');
     }
+
+    errorSpan.classList.remove('visible');
     errorSpan.innerText = '';
     inputParent.classList.remove('div-error');
 }

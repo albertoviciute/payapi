@@ -27,7 +27,7 @@
 }
 
 .pricing-plan__description {
-  color: var(--san-juan-blue);
+  color: #6C8294;
   font-family: Public Sans;
   font-size: 15px;
   font-style: normal;
@@ -212,6 +212,18 @@
 
   button.button-text.button--primary-blue.button-mobile {
     margin-bottom: 80px;
+  }
+
+  .container-bottom {
+    padding: 2px 0 70px;
+  }
+
+  .pricing-main {
+    gap: 0;
+  }
+
+  .pricing-plan__description {
+    min-height: 57px;
   }
 
 }

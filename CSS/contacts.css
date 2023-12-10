@@ -1,3 +1,11 @@
+.main-content__div{
+    padding: 40px 164px 0 165px;
+}
+
+.main-bubble {
+    background-position: 121.5% -527px;
+}
+
 .main-contact-form__main-text h1 {
     font-family: DM Serif Display;
     color: rgb(54, 83, 107);
@@ -8,7 +16,7 @@
     text-align: left;
     max-width: 730px;
     max-height: 133px;
-    margin-top: 82px;
+    margin-top: 84px;
 }
 
 .main-content__contacts {
@@ -85,7 +93,7 @@ input, textarea {
 }
 
 .contact__main--right {
-    margin-top: 30px;
+    margin-top: 46px;
 }
 
 .contact__main--right h3 {
@@ -184,6 +192,10 @@ input, textarea {
     padding: 94px 0;
 }
 
+.footer {
+    padding: 0 164px 0 165px;
+}
+
 .container {
     display: block;
     position: relative;
@@ -254,7 +266,7 @@ input, textarea {
 .error-message{
     color: rgba(255, 0, 0, 1);
     padding: 10px 0 0 20px;
-  }
+}
 
 .main-contact-form__contact-form:has(.div-error) .ready-to-start {
     margin-top: 0;
@@ -413,6 +425,7 @@ input, textarea {
 
     .main-contact-form__contact-form textarea {
         height: 81px;
+        text-align: left;
     }
 
     .error-message {
@@ -504,7 +517,7 @@ input, textarea {
     }
 
     .container-bottom {
-        padding: 154px 0 80px 0;
+        padding: 154px 0 59px 0;
     }
 
 }
