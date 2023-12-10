@@ -11,17 +11,14 @@ body {
   --light-san-juan-blue: rgb(108, 130, 148);
 }
 
-/* NEW CODE */
 .main-content__div,
 .main-content__div--bottom {
   margin: 0 auto;
 }
 
-/* NEW CODE */
 .main-content__div,
 .main-content__div--bottom {
   padding: 40px 148px 0 165px;
-  /* max-width: 1110px; Perkelti i didesnius ekranus nei 1440px*/
 }
 
 
@@ -173,10 +170,17 @@ header {
 #formScheduleDemo .error-message {
   margin: 10px 0 0 30px;
   text-align: left;
+
 }
 
 .error-message {
-  color: rgba(255, 0, 0, 1);
+  color: #F00;
+  font-family: Public Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.085px;
 }
 
 .button-bottom {
@@ -640,17 +644,24 @@ footer {
   }
 }
 
+@media only screen and (min-width: 376px) and (max-width: 640px) {
+  .who-we-work {
+    column-gap: 0 !important;
+  }
+}
+
 @media only screen and (min-width: 641px) and (max-width: 740px) {
-  
+
   .container-navbar li {
     padding-left: 25px !important;
   }
 
-  .container-navbar li:first-child, .footer-companylogo  {
+  .container-navbar li:first-child,
+  .footer-companylogo {
     padding-left: 30px !important;
   }
 
-  .footer-companylogo  {
+  .footer-companylogo {
     margin-right: 30px !important;
   }
 
@@ -730,7 +741,7 @@ footer {
     max-width: 0;
     overflow: hidden;
     position: absolute;
-    top: -52px;
+    top: -55px;
     right: -23px;
     background-color: #1b262f;
     background-image: url(../IMG/bg-pattern-circle.svg);
@@ -738,10 +749,14 @@ footer {
     background-position: -277px -550px;
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
     width: 300px;
-    height: 667px;
+    height: 685px;
     z-index: 20;
     transition: max-width 0.7s ease-in-out;
     text-align: center;
+  }
+
+  .dropdown-content ul{
+    margin-top: 68px;
   }
 
   .show {
@@ -786,7 +801,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 79px 0;
+    padding: 79px 0 70px;
   }
 
   .container-bottom h2 {
@@ -828,6 +843,14 @@ footer {
     margin-bottom: 16px;
     width: 300px;
     left: 0px;
+  }
+
+  .error-message {
+    display: none;
+  }
+
+  .visible{
+    display: block;
   }
 
   .button-bottom {
@@ -899,12 +922,12 @@ footer {
   .container-column__consumer-payments-logo {
     margin-left: 0;
   }
-  
+
   .header-container__nav-form {
     flex-direction: column;
   }
 
-  .header-container__email{
+  .header-container__email {
     text-align: left;
   }
 
