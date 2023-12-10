@@ -214,7 +214,7 @@
     }
 
     .about-our__main-bottom {
-        margin: 65px 0 -25px 0;
+        margin: 65px 0 -25px -3px;
     }
 
     .about--bottom {
@@ -223,7 +223,7 @@
     }
 
     .container-bottom {
-        padding: 95px 0 100px;
+        padding: 95px 0 91px 15px;
     }
 }
 
