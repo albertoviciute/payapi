@@ -451,8 +451,9 @@ input, textarea {
 
     .error-message {
         text-align: left;
+        padding: 0 0 0 20px;
     }
-    
+
     .email-contact{
         width: 305px;
     }
