@@ -282,6 +282,19 @@ input, textarea {
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
+    .main-bubble {
+        background-position: 501px -464px;
+        background-size: 780px;
+    }
+
+    .main-content__div {
+        padding: 40px 39px 0 39px;
+    }
+
+    .footer {
+        padding: 0 40px 0 39px;
+    }
+
     .main-contact-form {
         max-width: 768px;
     }
@@ -363,6 +376,14 @@ input, textarea {
 }
 
 @media only screen and (max-width: 40em){
+
+    .main-bubble {
+        background-position: 74px -644px;
+    }
+
+    .main-content__div {
+        padding: 36px 24px 0 24px;
+    }
 
     .main-content__contacts {
         flex-direction: column;
@@ -517,7 +538,7 @@ input, textarea {
     }
 
     .container-bottom {
-        padding: 154px 0 59px 0;
+        padding: 154px 0 79px 0;
     }
 
 }
