@@ -108,6 +108,10 @@
         background-image: unset;
     }
 
+    .container-bottom {
+        padding: 100px 0 90px;
+    }
+
 }
 
 @media only screen and (max-width: 40em) {
