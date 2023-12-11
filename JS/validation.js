@@ -17,26 +17,26 @@ function contactFormSubmit(e) {
         const sanitizedValues = sanitizeValues(formValues);
         const fakeEndpoint = 'https://jsonplaceholder.typicode.com/posts';
         console.log(sanitizedValues)
-        // fetch(fakeEndpoint, {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify(sanitizedValues),
-        // })
-        //     .then(response => {
-        //         if (response.ok || response.status === 201) {
-        //             return response.json();
-        //         } else {
-        //             throw new Error(`Form submission failed with status: ${response.status}`);
-        //         }
-        //     })
-        //     .then(responseData => {
-        //         console.log('Form submitted successfully:', responseData);
-        //     })
-        //     .catch(error => {
-        //         console.error('An error occurred during form submission:', error);
-        //     });
+        fetch(fakeEndpoint, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(sanitizedValues),
+        })
+            .then(response => {
+                if (response.ok || response.status === 201) {
+                    return response.json();
+                } else {
+                    throw new Error(`Form submission failed with status: ${response.status}`);
+                }
+            })
+            .then(responseData => {
+                console.log('Form submitted successfully:', responseData);
+            })
+            .catch(error => {
+                console.error('An error occurred during form submission:', error);
+            });
     }
     contactForm.reset();
     resetInputBorder();
